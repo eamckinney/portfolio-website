@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Navigation extends Component {
@@ -22,28 +22,28 @@ class Navigation extends Component {
 
     render() {
         return (
-            <div>
+            
                 <Navbar dark sticky="top" expand="md">
-                        <NavbarToggler onClick={this.toggleNav} />
-                        <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar className="nav-center">
-                                <NavItem>
-                                    <NavLink className="nav-link underline" to="/home"> Home </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link underline" to="/about"> About </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link underline" to="/projects"> Projects </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link underline" to="/connect"> Connect </NavLink>
-                                </NavItem>         
-                            </Nav>
-                        </Collapse>
-                        <NavbarBrand className="site-logo mx-auto" href="/"><span className="logo-text">EM</span></NavbarBrand>
+                    <NavbarToggler onClick={this.toggleNav} />
+                    <Collapse isOpen={this.state.isNavOpen} navbar>
+                        <Nav navbar className="nav-center">
+                            <NavItem>
+                                <NavLink className="nav-link underline" to="/home"> Home </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link underline" to="/about"> About </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link underline" to="/projects"> Projects </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link underline" to="/connect"> Connect </NavLink>
+                            </NavItem>         
+                        </Nav>
+                    </Collapse>
+                    <NavbarBrand className="site-logo mx-auto" href="/"><span className="logo-text">EM</span></NavbarBrand>
                 </Navbar>
-            </div>
+            
         );
     }    
 

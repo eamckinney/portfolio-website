@@ -6,6 +6,7 @@ import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
 import 'typeface-lora';
 import App from './App';
+import './App.css';
 
 
 
