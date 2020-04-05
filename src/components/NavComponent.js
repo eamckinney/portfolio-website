@@ -6,14 +6,12 @@ class Navigation extends Component {
     constructor(props) {
         super(props);
 
-        //"bind the event handler": makes sure when toggleNav is called, "this" refers correctly to the component
-        this.toggleNav = this.toggleNav.bind(this);
         this.state = {
           isNavOpen: false
         };
     }
 
-    toggleNav() {
+    toggleNav = () => {
         this.setState({
             //when toggled, flip to either true or false
             isNavOpen: !this.state.isNavOpen
@@ -23,26 +21,26 @@ class Navigation extends Component {
     render() {
         return (
             
-                <Navbar dark sticky="top" expand="md">
-                    <NavbarToggler onClick={this.toggleNav} />
-                    <Collapse isOpen={this.state.isNavOpen} navbar>
-                        <Nav navbar className="nav-center">
-                            <NavItem>
-                                <NavLink className="nav-link underline" to="/home"> Home </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link underline" to="/about"> About </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link underline" to="/projects"> Projects </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link underline" to="/connect"> Connect </NavLink>
-                            </NavItem>         
-                        </Nav>
-                    </Collapse>
-                    <NavbarBrand className="site-logo mx-auto" href="/"><span className="logo-text">EM</span></NavbarBrand>
-                </Navbar>
+            <Navbar dark sticky="top" expand="md">
+                <NavbarToggler onClick={this.toggleNav} />
+                <Collapse isOpen={this.state.isNavOpen} navbar>
+                    <Nav navbar className="nav-center">
+                        <NavItem>
+                            <NavLink className="nav-link underline" to="/home"> Home </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link underline" to="/about"> About </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link underline" to="/projects"> Projects </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-link underline" to="/connect"> Connect </NavLink>
+                        </NavItem>         
+                    </Nav>
+                </Collapse>
+                <NavbarBrand className="site-logo mx-auto" href="#Home"><span className="logo-text">EM</span></NavbarBrand>
+            </Navbar>
             
         );
     }    

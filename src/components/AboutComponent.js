@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function About() {
     
@@ -31,7 +32,7 @@ function About() {
                 <div className="row">
                     <div className="col first-block-scroll">
                         <div className="text-center mx-auto" id="scroll-about">
-                            <p style={{fontSize: "12px"}} data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">Scroll<br /><i class="fa fa-lg fa-angle-double-down" /></p>
+                            <a href="#Projects"><p style={{fontSize: "12px"}} data-aos="fade-up" data-aos-duration="2000">Scroll<br /><i class="fa fa-lg fa-angle-double-down" /></p></a>
                         </div>
                     </div>
                 </div>

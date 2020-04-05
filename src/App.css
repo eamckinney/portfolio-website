@@ -140,7 +140,7 @@ h2 {
   position: relative;
   transform: translateY(20px); }
 
-#scroll a:hover {
+a:hover {
   text-decoration: none;
 }
 
@@ -170,6 +170,8 @@ h2 {
     cursor: pointer;
     position: relative;
     transform: translateY(20px); }
+  .first-block-scroll #scroll-about a {
+    color: #3D405B; }
 
 .second-block {
   background-color: #fff9f5;
@@ -177,7 +179,7 @@ h2 {
   padding-top: 5%; }
   .second-block #Projects {
     padding-top: 10%;
-    padding-bottom: 15%; }
+    padding-bottom: 5%; }
   .second-block .project-box {
     position: relative;
     color: #fff9f5;
@@ -191,18 +193,62 @@ h2 {
     cursor: pointer;
     position: relative;
     transform: translateY(10px); }
-  .second-block #project0 {
+  .project0 {
     background-color: #3D405B; }
-  .second-block #project1 {
+  .project1 {
     background-color: #E07A5F; }
-  .second-block #project2 {
+  .project2 {
     background-color: #81B29A; }
-  .second-block #project3 {
+  .project3 {
     background-color: #7F8FA3; }
+
+.close {
+  color: #fff; 
+  opacity: 1;
+}
+
+.close:hover {
+  color: #fff; 
+  opacity: .6;
+}
     
 .card-title {
   font-size: 1.8em;
 }
+
+.third-block {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+  padding: 20%; }
+
+.connect {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 5%;
+  border-style: solid;
+  border-color: #fff9f5; }
+
+.site-footer a:link {
+  color: #fff9f5;
+  background-color: transparent;
+  text-decoration: underline; }
+
+.site-footer a:visited {
+  color: #fff9f5;
+  background-color: transparent;
+  text-decoration: underline; }
+
+.site-footer a:hover {
+  color: #DEE2E6;
+  background-color: transparent;
+  text-decoration: underline; }
+
+.site-footer a:active {
+  color: #DEE2E6;
+  background-color: transparent;
+  text-decoration: underline; }
+
+.fa-social {
+  color: #fff9f5; }
+
 
 @media (max-width: 1200px) {
   h1 {

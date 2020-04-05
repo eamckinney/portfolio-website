@@ -4,6 +4,7 @@ import Navigation from './NavComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
 import Projects from './ProjectsComponent';
+import Connect from './ConnectComponent';
 
 
 class Main extends Component {
@@ -14,6 +15,7 @@ class Main extends Component {
                 <Home />
                 <About />
                 <Projects />
+                <Connect />
             </React.Fragment>
         );
     }
