@@ -7,7 +7,7 @@ function Contact() {
                 <div className="col" id="Connect">
                     <div className="third-block">
                         <div className="connect py-4 text-center">
-                            <h2 className="text-center">Let's Connect.</h2>
+                            <h1 className="text-center">Let's Connect.</h1>
                             <p className="text-center">
                                 You can reach me at <a href="mailto:emily.a.mckinney@gmail.com">emily.a.mckinney@gmail.com</a>.
                                 <br/><br/>

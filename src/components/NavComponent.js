@@ -4,11 +4,9 @@ import {
 	Navbar,
 	NavbarBrand,
 	NavbarToggler,
-	Collapse,
-	NavItem,
+	Collapse
 } from "reactstrap";
-import { NavLink } from "react-router-dom";
-//importing zenscroll makes all scrolling smooth...
+//importing zenscroll makes all target link scrolling smooth...
 import { zenscroll } from "zenscroll";
 
 class Navigation extends Component {
@@ -33,27 +31,27 @@ class Navigation extends Component {
 				<NavbarToggler onClick={this.toggleNav} />
 				<Collapse isOpen={this.state.isNavOpen} navbar>
 					<Nav navbar className="nav-center">
-						<ul class="navbar-nav mx-auto">
-							<li class="nav-item border-right text-center">
-								<a class="nav-link underline" href="#Home">
+						<ul className="navbar-nav mx-auto">
+							<li className="nav-item rightBorder text-center">
+								<a className="nav-link underline" href="#Home">
 									{" "}
 									<span> Home </span>
 								</a>
 							</li>
-							<li class="nav-item border-right text-center">
-								<a class="nav-link underline" href="#About">
+							<li className="nav-item rightBorder text-center">
+								<a className="nav-link underline" href="#About">
 									{" "}
 									About{" "}
 								</a>
 							</li>
-							<li class="nav-item border-right text-center">
-								<a class="nav-link underline" href="#Projects">
+							<li className="nav-item rightBorder text-center">
+								<a className="nav-link underline" href="#Projects">
 									{" "}
 									Projects{" "}
 								</a>
 							</li>
-							<li class="nav-item text-center">
-								<a class="nav-link underline" href="#Connect">
+							<li className="nav-item text-center">
+								<a className="nav-link underline" href="#Connect">
 									{" "}
 									Connect{" "}
 								</a>

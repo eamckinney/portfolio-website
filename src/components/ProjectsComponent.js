@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Card, CardImg, CardImgOverlay, CardTitle, CardBody, CardText,
     Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import { PROJECTS } from '../shared/projects';
-import RouteFilter from './RouteFilterComponent.js';
+
 import { Link } from "react-router-dom";
 
 
@@ -35,7 +35,7 @@ class RenderProject extends Component {
                     <ModalHeader toggle={this.toggleModal}>{this.props.project.name}</ModalHeader>
                     <ModalBody>
                         <p>{this.props.project.longDescription}</p>
-                        <Link to="/routefilter"><Button className="btn-outline-light">Check it out</Button></Link>
+                        <Link to={this.props.project.url}><Button className="btn-outline-light">Check it out</Button></Link>
                     </ModalBody>
                 </Modal>
             </React.Fragment>
@@ -87,7 +87,7 @@ class Projects extends Component {
                         </div>
                         <div className="row">
                             <div className="col first-block-scroll">
-                                <div className="text-center mx-auto" id="scroll-about">
+                                <div className="text-center mx-auto mb-5" id="scroll-about">
                                     <a href="#Connect"><p style={{fontSize: "12px"}} data-aos="fade-up" data-aos-duration="2000">Scroll<br /><i class="fa fa-lg fa-angle-double-down" /></p></a>
                                 </div>
                             </div>
