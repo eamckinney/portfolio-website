@@ -4,16 +4,14 @@ TO DO:
 
 - add AND v. OR options (for style filters) using cool slidy bar bubble thing
 - add filters: stars, type, grade, 2nd level location
-- sort by: stars, type, grade, style, location, name (alphabetical)
+- multi-level sort?
 - load in more data. maybe add new field to filter by "within 60 miles of ___" instead of state
+- summary of the data pulled: # of routes, locations, average # of stars within location...
 
 */
 
-
-
-
-import React, { Component } from 'react';
-import { Form, Label, Divider, Rating } from 'semantic-ui-react';
+import React, { Component, useEffect } from 'react';
+import { Form, Label, Divider, Rating, Header } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import 'semantic-ui-css/semantic.min.css';
@@ -44,8 +42,46 @@ const geoOptions = [
     { key: 'wisconsin', text: 'Wisconsin', value: 'Wisconsin' }
 ]
 
-
 let routes = routesData;
+
+function compareValues(key) {
+    return function innerSort(a, b) {
+      if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+        // property doesn't exist on either object
+        return 0;
+      }
+  
+      let varA;
+      let varB;
+
+      if (key === "rating") {
+        varA = (a[key].indexOf("1") === 2)
+            ? a[key].toUpperCase() : a[key].replace(".",".0").toUpperCase();
+        varB = (b[key].indexOf("1") === 2)
+            ? b[key].toUpperCase() : b[key].replace(".",".0").toUpperCase();
+
+      } else if (key === "location" ) {
+          varA = a[key][1].concat(" ", a[key][2]).toUpperCase();
+          varB = b[key][1].concat(" ", b[key][2]).toUpperCase();
+
+      } else {
+        varA = (typeof a[key] === 'string')
+            ? a[key].toUpperCase() : a[key];
+        varB = (typeof b[key] === 'string')
+            ? b[key].toUpperCase() : b[key];
+      }
+  
+      console.log(varA, varB);
+
+      let comparison = 0;
+      if (varA > varB) {
+        comparison = 1;
+      } else if (varA < varB) {
+        comparison = -1;
+      }
+      return (key === "stars") ? comparison * -1 : comparison;
+    };
+  }
 
 
 class RouteFilter extends Component {
@@ -57,14 +93,16 @@ class RouteFilter extends Component {
             submittedGeo: '', 
             submittedFilters: '',
             filteredRoutes: [],
-            type: 'Sport'
+            type: 'Sport',
+            sort: 'name'
         };
     }
+
 
     handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
     handleSubmit = () => {
-        const { geography, filters, type } = this.state;
+        const { geography, filters, type, sort } = this.state;
         this.setState({ submittedGeo: geography, submittedFilters: filters });
 
         routes = routesData;
@@ -83,6 +121,10 @@ class RouteFilter extends Component {
         if (type.length > 0) {
             routes = routes.filter(obj => obj.type.includes(type));
         }
+
+        if (sort.length > 0) {
+            routes = routes.sort(compareValues(sort))
+        }
         
 
         this.setState({ filteredRoutes: routes });
@@ -90,22 +132,28 @@ class RouteFilter extends Component {
     
     render() {
 
-        const { geography, filters, submittedGeo, submittedFilters, type } = this.state;
+        const { geography, filters, submittedGeo, submittedFilters, type, sort } = this.state;
+        window.scrollTo(0, 0);
 
         return(
             <div className="routeFilterPage" id="Top">
-                <div className="text-center mb-4">
-                    <Link to="/home" className="text-center"><Button className="btn-outline-dark">Back to Home</Button></Link>
+                <div className="container mb-4 pl-0">
+                    <div className="row">
+                        <div className="col">
+                            <h2 className="appTitle mb-0">RouteFinder</h2>
+                            <h3 className="appTitle mt-0 mb-3">Powered by Mountain Project, created by Emily McKinney</h3>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col">
+                            <Link to="/home" className="text-center"><Button className="btn-outline-dark">Back to Home</Button></Link>
+                        </div>
+                    </div>
                 </div>
                 
                 <div className="container appStyle">
                     <div className="row styled">
-                        <div className="col text-center">
-                            <h3>RouteFinder - powered by Mountain Project</h3>
-                        </div>
-                    </div>
-                    <div className="row styled">
-                        <div className="col">
+                        <div className="col mt-3">
                             <Form inverted onSubmit={this.handleSubmit}>
                                 <Form.Select
                                     fluid
@@ -152,38 +200,84 @@ class RouteFilter extends Component {
                                     onChange={this.handleChange}
                                     />
                                 </Form.Group>
-                                
-                                <Form.Button content='Submit'/>
+                                <Divider hidden />
+                                <Divider horizontal>
+                                    <Header as='h4' style={{ color: "white" }}>
+                                        SORT
+                                    </Header>
+                                </Divider>
+                                <Divider hidden />
+                                <Form.Group className="sortGroup">
+                                    <Form.Radio
+                                    className="sort"
+                                    toggle
+                                    label='Name'
+                                    name='sort'
+                                    value='name'
+                                    checked={sort === 'name'}
+                                    onChange={this.handleChange}
+                                    /> 
+                                    <Form.Radio
+                                    className="sort"
+                                    toggle
+                                    label='Location'
+                                    name='sort'
+                                    value='location'
+                                    checked={sort === 'location'}
+                                    onChange={this.handleChange}
+                                    /> 
+                                    <Form.Radio
+                                    className="sort"
+                                    toggle
+                                    label='Grade'
+                                    name='sort'
+                                    value='rating'
+                                    checked={sort === 'rating'}
+                                    onChange={this.handleChange}
+                                    /> 
+                                    <Form.Radio
+                                    className="sort"
+                                    toggle
+                                    label='Stars'
+                                    name='sort'
+                                    value='stars'
+                                    checked={sort === 'stars'}
+                                    onChange={this.handleChange}
+                                    />
+                                </Form.Group>
+                                <Divider hidden />
+                                <div className="text-center">
+                                    <Form.Button content='Submit'/>
+                                </div>
                             </Form>
                         </div>
                     </div>
                     <div className="row styled">
                         <div className="col">
                             <Divider inverted />
-                            <h3>Get climbing!</h3>
-                            <p>Once you have clicked submit above, you can click the climb names below to go to the Mountain Project page.</p>
-                            <p><strong>Filtered Routes: {this.state.filteredRoutes.length}</strong></p>
-                            <Divider inverted /><br/>
+                            <div className="text-center">
+                                <h3>Get climbing!</h3>
+                                <p>Once you have clicked submit above, you can click the climb names below to go to the Mountain Project page.</p>
+                                <h3><strong>Filtered Routes: {this.state.filteredRoutes.length}</strong></h3>
+                            </div>                            
+                            <Divider hidden /><Divider hidden />
                             <div style={{color: "white"}}>
                                 {this.state.filteredRoutes.map(route => {
                                     return(
                                         <div key={route.id}>
-                                            <h5><a className="routeName" target="_blank" rel="noopener noreferrer" href={route.url}>{route.name}</a> <Rating defaultRating={ (Math.round(route.stars)) - 1} maxRating={4} disabled /></h5>
-                                            <Label.Group color="yellow">
+                                            <a className="routeName" target="_blank" rel="noopener noreferrer" href={route.url}>{route.name}</a> <Rating defaultRating={ (Math.round(route.stars)) - 1} maxRating={4} disabled />
+                                            <p className="routeLocation"><strong>Location:</strong> {route.location[1]} - {route.location[2]}</p>
+                                            <p> <Label.Group>
+                                                <Label circular>{route.type}</Label>
+                                                <Label circular>{route.rating}</Label>
                                                 {route.style.map(style => {
                                                     return(
-                                                        <Label>{style}</Label>
+                                                        <Label color="yellow">{style}</Label>
                                                     );
                                                 })}
-                                            </Label.Group>
+                                            </Label.Group> </p>
                                             <p><em>{route.desc}</em></p>
-                                            <ul>
-                                                <li><strong>Location:</strong> {route.location[1]} - {route.location[2]}</li>
-                                                <li><strong>Type:</strong> {route.type}</li>
-                                                <li><strong>Grade:</strong> {route.rating}</li>
-                                                <li><strong>Stars:</strong> {((route.stars*10) - 10)/10}</li>
-                                            </ul>
-                                            <br/>
+                                            <Divider hidden /><Divider hidden />
                                         </div>
                                     );
                                 })}

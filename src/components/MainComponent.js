@@ -11,19 +11,21 @@ import RouteFilter from './RouteFilterComponent.js';
 class Main extends Component {
     render() {
         return (
-            <Switch>
-                <Route path='/home' render={() => 
-                    <React.Fragment>
-                        <Navigation />
-                        <Home />
-                        <About />
-                        <Projects />
-                        <Connect />
-                    </React.Fragment>
-                } />
-                <Route path='/routefilter' component={RouteFilter} />
-                <Redirect to='/home' />
-            </Switch>
+            <div>
+                <Switch>
+                    <Route path='/home' render={() => 
+                        <React.Fragment>
+                            <Navigation />
+                            <Home />
+                            <About />
+                            <Projects />
+                            <Connect />
+                        </React.Fragment>
+                    } />
+                    <Route path='/routefilter' component={RouteFilter} />
+                    <Redirect to='/home' />
+                </Switch>
+            </div>
         );
     }
 }
