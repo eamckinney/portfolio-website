@@ -21,6 +21,8 @@ class RenderProject extends Component {
 	};
 
     render() {
+        
+
         return(
             <React.Fragment>
                 <Card className={`project-box project${this.props.project.id}`}>
@@ -35,6 +37,13 @@ class RenderProject extends Component {
                     <ModalHeader toggle={this.toggleModal}>{this.props.project.name}</ModalHeader>
                     <ModalBody>
                         <p>{this.props.project.longDescription}</p>
+                        <img
+                            className="image"
+                            src={this.props.project.image}
+                            width="400"
+                            alt="no image"
+                            />
+                        <br />
                         <Link to={this.props.project.url}><Button className="btn-outline-light">Check it out</Button></Link>
                     </ModalBody>
                 </Modal>
@@ -69,7 +78,6 @@ class Projects extends Component {
             <div class="container-fluid">
                 <div class="row">
                     <div class="col second-block px-5">
-                        <hr />
                         <div class="row" id="Projects">
                             <div class="col-md-5 mx-4 order-md-last">
                                 <div class="mt-5 align-items-center">

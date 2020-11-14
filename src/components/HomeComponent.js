@@ -14,10 +14,14 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="row ">
-                <div className="col intro-block pb-5">
+            <div className="row">
+                <div className="col intro-block pb-5 pt-5">
+                </div>
+            </div>
+            <div className="row">
+                <div className="col intro-block pb-5 pt-5">
                     <div className="text-center mx-auto" id="scroll">
-                        <a href="#About"><p data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000">Scroll<br /><i class="fa fa-lg fa-angle-double-down" /></p></a>
+                        <a href="#About">Scroll<br /><i class="fa fa-lg fa-angle-double-down" /></a>
                     </div>
                 </div>
             </div>

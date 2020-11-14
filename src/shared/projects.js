@@ -2,6 +2,7 @@ export const PROJECTS = [
     {
         id: 0,
         name: "Brand Health Graphic",
+        image: "/img/d3dataviz.png",
         description: "This interactive graphic was built with d3.js, and used to combine more than 300 unique data points into a simple and interactive view.",
         longDescription: "This interactive graphic was built with d3.js, and used to combine more than 300 unique data points into a simple and interactive view. This interactive graphic was built with d3.js, and used to combine more than 300 unique data points into a simple and interactive view.",
         url: ""

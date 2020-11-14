@@ -29,7 +29,7 @@ h2 {
 
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 1);
   
    }
 
@@ -110,7 +110,7 @@ h2 {
       }
   .intro-block .sub-heading {
     padding-right: 40%;
-    font-size: .9em; }
+    font-size: 1em; }
   
 #scroll {
   opacity: 0.5;
@@ -160,6 +160,9 @@ a:hover {
   .first-block h1 {
     line-height: .9em;
     padding: 15% 5%; }
+  .first-block p {
+    padding: 15% 5%; }
+  
 
 .first-block-scroll {
   background-color: #fff9f5;
