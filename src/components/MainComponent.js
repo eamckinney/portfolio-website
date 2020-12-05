@@ -4,6 +4,7 @@ import Navigation from './NavComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
 import Projects from './ProjectsComponent';
+import Skills from './SkillsComponent';
 import Connect from './ConnectComponent';
 import RouteFilter from './RouteFilterComponent.js';
 
@@ -19,10 +20,11 @@ class Main extends Component {
                             <Home />
                             <About />
                             <Projects />
+                            <Skills />
                             <Connect />
                         </React.Fragment>
                     } />
-                    <Route path='/routefilter' component={RouteFilter} />
+                    <Route path='/betaforbeta' component={RouteFilter} />
                     <Redirect to='/home' />
                 </Switch>
             </div>

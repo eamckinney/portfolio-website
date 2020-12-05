@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Card, CardTitle, CardBody, CardText,
     Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import { PROJECTS } from '../shared/projects';
-
 import { Link } from "react-router-dom";
 
 
@@ -22,7 +21,6 @@ class RenderProject extends Component {
 
     render() {
         
-
         return(
             <React.Fragment>
                 <Card className={`project-box project${this.props.project.id}`}>
@@ -88,7 +86,7 @@ class Projects extends Component {
                                         I've been feeding my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
                                         dabbling with d3.js to play with data visualizations, 
                                         and working with a local nonprofit to develop an architectural design tool for water.<br/><br/>
-                                        Want to know more or chat about a new project? Scroll down to connect with me.
+                                        Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
                                     </p>
                                 </div>
                             </div>

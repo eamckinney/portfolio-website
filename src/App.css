@@ -147,10 +147,7 @@ a:hover {
   text-decoration: none;
 }
 
-.second-block hr {
-  border-width: 1px;
-  border-color: black;
-}
+
 
 
 .first-block {
@@ -208,6 +205,11 @@ a:hover {
   .project3 {
     background-color: #7F8FA3; }
 
+.second-block hr {
+  border-width: 1px;
+  border-color: black;
+}
+
 .close {
   color: #fff; 
   opacity: 1;
@@ -221,6 +223,16 @@ a:hover {
 .card-title {
   font-size: 1.8em;
 }
+
+.skills-block {
+  background-color: #3D405B;
+  color: #fff9f5;
+  padding: 10% 20% 7%; }
+  .skills-block h1 {
+    line-height: .9em;
+    padding: 15% 5%; }
+  .skills-block p {
+     }
 
 .third-block {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
@@ -261,6 +273,18 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   
+}
+
+a:link {
+  color: #81B29A
+}
+
+a:visited {
+  color: #81B29A
+}
+
+a:hover {
+  color: #A6C9B8
 }
 
 @media (max-width: 1200px) {
