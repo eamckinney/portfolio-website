@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardImg, CardImgOverlay, CardTitle, CardBody, CardText,
+import { Card, CardTitle, CardBody, CardText,
     Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import { PROJECTS } from '../shared/projects';
 
@@ -36,15 +36,16 @@ class RenderProject extends Component {
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} contentClassName={`project${this.props.project.id}`}>
                     <ModalHeader toggle={this.toggleModal}>{this.props.project.name}</ModalHeader>
                     <ModalBody>
-                        <p>{this.props.project.longDescription}</p>
+                        {this.props.project.longDescription}
                         <img
                             className="image"
                             src={this.props.project.image}
-                            width="400"
+                            width="100%"
                             alt="no image"
+                            class="center"
                             />
                         <br />
-                        <Link to={this.props.project.url}><Button className="btn-outline-light">Check it out</Button></Link>
+                        <Link to={this.props.project.url}><Button className="btn-outline-light center">{this.props.project.buttonText}</Button></Link>
                     </ModalBody>
                 </Modal>
             </React.Fragment>
@@ -83,7 +84,11 @@ class Projects extends Component {
                                 <div class="mt-5 align-items-center">
                                     <h1 class="text-left" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
                                     <p class="text-left" data-aos="fade-up" data-aos-duration="1000">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        Here are a couple of projects I'm working on. 
+                                        I've been feeding my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
+                                        dabbling with d3.js to play with data visualizations, 
+                                        and working with a local nonprofit to develop an architectural design tool for water.<br/><br/>
+                                        Want to know more or chat about a new project? Scroll down to connect with me.
                                     </p>
                                 </div>
                             </div>

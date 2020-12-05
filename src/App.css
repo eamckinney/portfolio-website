@@ -17,7 +17,7 @@ h1, h2, h3, .card-title, button, .modal-title {
   font-family: "Lora", serif; }
 
 h1 {
-  font-size: 8em; }
+  font-size: 9em; }
 
 h2 {
   font-size: 5em; }
@@ -256,7 +256,12 @@ a:hover {
   color: #fff9f5; }
 
 
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 
 @media (max-width: 1200px) {
   h1 {

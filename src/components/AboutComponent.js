@@ -12,15 +12,16 @@ function About() {
                             </div>
                             <div className="col-sm-6">
                                 <p className="text-left" data-aos="fade-up" data-aos-duration="1000">
-                                    What do people even write in these sections? How do I tell you about myself without sounding arrogant or dry?
+                                    What do people even write in these sections? How do I tell you about myself without sounding arrogant or cliché?
                                     I will try to keep it simple. 
                                     <br/><br/>
                                     At the center of who I am, <b>I really like to solve puzzles and learn new things.</b> Right now, that is taking 
-                                    shape by working at a startup called Equilo and learning how to be a project manager and write python code,
-                                    and by helping companies understand how people make decisions as a freelance quantitative brand strategist.
+                                    shape by learning how to write Python code and be a project manager at a gender research + tech startup called Equilo,
+                                    by helping companies understand how people make decisions as a freelance quantitative brand strategist, and 
+                                    by fiddling around with JavaScript, React, APIs, and machine learning "for fun."
                                     <br/><br/>
-                                    I will leave it at that. If you're intrigued, drop me a line. I'd rather chat over the phone or through
-                                    some video platform then give everything away on this website, anyway. I hope to hear from you.
+                                    I will leave it at that. If you're intrigued, drop me a line. I'd rather chat with you 
+                                    than give everything away on this website, anyway. I hope to hear from you.
                                 </p>
                             </div>
                         </div>

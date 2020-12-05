@@ -10,7 +10,7 @@ TO DO:
 
 */
 
-import React, { Component, useEffect } from "react";
+import React, { Component } from "react";
 import { Form, Label, Divider, Rating, Header } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";

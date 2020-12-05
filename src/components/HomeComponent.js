@@ -8,7 +8,7 @@ function Home() {
                     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                         <h1 className="text-left main-heading pl-5">Hi.<br />I'm Emily.</h1>
                         <div>
-                            <p className="sub-heading pl-5" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">I am a web developer, designer, and data enthusiast.</p>
+                            <p className="sub-heading pl-5" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">I am a web developer, designer, brand strategist, and data enthusiast.</p>
                             <p className="sub-heading pl-5 pb-5" data-aos="fade-up" data-aos-delay="2500" data-aos-duration="1000">Thanks for coming.</p>
                         </div>
                     </div>
