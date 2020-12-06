@@ -19,11 +19,8 @@ class Navigation extends Component {
 			isRooOpen: !this.state.isRooOpen,
         });
 		
-		if (isRooOpen) {
-            gtag('event', 'foundRoo', {
-                'event_name': 'foundRoo',
-                'location': 'navBar'
-            });
+		if (this.state.isRooOpen) {
+           
 		}
 		
     };

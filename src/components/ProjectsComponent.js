@@ -70,11 +70,8 @@ class Projects extends Component {
 			isRooOpen: !this.state.isRooOpen,
         });
 
-        if (isRooOpen) {
-            gtag('event', 'foundRoo', {
-                'event_name': 'foundRoo',
-                'location': 'projectScroll'
-            });
+        if (this.state.isRooOpen) {
+            
         }
         
     };
