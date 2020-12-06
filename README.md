@@ -1,6 +1,6 @@
 ## Current Progress
 
-Currently fixing / adding images to project modals, updating "Check it out" button.
+Version 1 is complete!
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
