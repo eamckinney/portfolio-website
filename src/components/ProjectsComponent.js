@@ -18,7 +18,7 @@ class RenderProject extends Component {
     toggleModal = () => {
 		this.setState({
 			isModalOpen: !this.state.isModalOpen,
-		});
+        });
 	};
 
     render() {
@@ -69,6 +69,13 @@ class Projects extends Component {
 		this.setState({
 			isRooOpen: !this.state.isRooOpen,
         });
+
+        if (isRooOpen) {
+            gtag('event', 'foundRoo', {
+                'event_name': 'foundRoo',
+                'location': 'projectScroll'
+            });
+        }
         
     };
 

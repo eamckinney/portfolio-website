@@ -15,6 +15,13 @@ class About extends Component {
 		this.setState({
 			isRooOpen: !this.state.isRooOpen,
         });
+
+        if (isRooOpen) {
+            gtag('event', 'foundRoo', {
+                'event_name': 'foundRoo',
+                'location': 'about'
+            });
+        }
         
     };
     
