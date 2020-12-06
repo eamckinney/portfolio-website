@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card, CardTitle, CardBody, CardText } from "reactstrap";
 
 function Home() {
     return (
@@ -15,8 +16,7 @@ function Home() {
                 </div>
             </div>
             <div className="row">
-                <div className="col intro-block pb-5 pt-5">
-                </div>
+                <div className="col intro-block pb-5 pt-5"></div>
             </div>
             <div className="row">
                 <div className="col intro-block pb-5 pt-5">

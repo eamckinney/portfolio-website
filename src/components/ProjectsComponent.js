@@ -9,10 +9,12 @@ class RenderProject extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isModalOpen: false
+            isModalOpen: false,
         };
     }
     
+    
+
     toggleModal = () => {
 		this.setState({
 			isModalOpen: !this.state.isModalOpen,
@@ -26,7 +28,7 @@ class RenderProject extends Component {
                 <Card className={`project-box project${this.props.project.id}`} onClick={this.toggleModal}>
                     <CardBody>
                         <CardTitle>{this.props.project.name}</CardTitle>
-                        <CardText>{this.props.project.description}</CardText>
+                        {this.props.project.description}
                         <Button className="btn-outline-light" onClick={this.toggleModal}>See More</Button>
                     </CardBody>
                 </Card>
@@ -58,10 +60,17 @@ class Projects extends Component {
         super(props);
         this.state = {
             projects: PROJECTS,
-            isModalOpen: false
+            isModalOpen: false,
+            isRooOpen: false
         };
     }
 
+    toggleRoo = () => {
+		this.setState({
+			isRooOpen: !this.state.isRooOpen,
+        });
+        
+    };
 
     render() {
 
@@ -82,44 +91,61 @@ class Projects extends Component {
         });
 
         return(
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col second-block px-5">
-                        <div class="row" id="Projects">
-                            <div class="col-md-5 mx-4 order-md-last">
-                                <div class="mt-5 align-items-center">
-                                    <h1 class="text-left" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
-                                    <p class="text-left" data-aos="fade-up" data-aos-duration="1000">
-                                        Here are a couple of projects I'm working on. 
-                                        I've been feeding my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
-                                        dabbling with d3.js to play with data visualizations, 
-                                        working with a local nonprofit to develop an architectural design tool for water,
-                                        and trying to save my houseplants from myself. <br/><br/>
-                                        Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
-                                    </p>
+            <React.Fragment>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col second-block px-5">
+                            <div class="row" id="Projects">
+                                <div class="col-md-5 mx-4 order-md-last">
+                                    <div class="mt-5 align-items-center">
+                                        <h1 class="text-left" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+                                        <p class="text-left" data-aos="fade-up" data-aos-duration="1000">
+                                            Here are a couple of projects I'm working on. 
+                                            I've been feeding my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
+                                            dabbling with d3.js to play with data visualizations, 
+                                            working with a local nonprofit to develop an architectural design tool for water,
+                                            and trying to save my houseplants from myself. <br/><br/>
+                                            Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">                                
+                                    <div class="row">
+                                        {projectsLeftCol}
+                                    </div>
+                                </div>
+                                <div class="col-md-3">                                
+                                    <div class="row">
+                                        {projectsRightCol}
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">                                
-                                <div class="row">
-                                    {projectsLeftCol}
-                                </div>
-                            </div>
-                            <div class="col-md-3">                                
-                                <div class="row">
-                                    {projectsRightCol}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col first-block-scroll">
-                                <div className="text-center mx-auto mb-5" id="scroll-about">
-                                    <a href="#Connect"><p style={{fontSize: "12px"}} data-aos="fade-up" data-aos-duration="2000">Scroll<br /><i class="fa fa-lg fa-angle-double-down" /></p></a>
+                            <div className="row">
+                                <div className="col first-block-scroll">
+                                    <div className="text-center mx-auto mb-5" id="scroll-about">
+                                        <a href="#Connect"><p style={{fontSize: "12px"}} data-aos="fade-up" data-aos-duration="2000">Sc<a onClick={this.toggleRoo}><span className='secret'>roo</span></a>ll<br /><i class="fa fa-lg fa-angle-double-down" /></p></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <Modal isOpen={this.state.isRooOpen} toggle={this.toggleRoo} contentClassName='roo'>
+                    <ModalHeader toggle={this.toggleRoo}>You found me!</ModalHeader>
+                    <ModalBody>
+                        My name is Roo, and I am Emily's dog! When I saw her website, I told her I liked it, but really I thought that she could use some extra flair (aka ME). So here I am! But shhh, don't tell her so that we can all just enjoy how cute I am. I love to go swimming and playing fetch outside; can you find all of the other places I've hidden myself while my mom was looking for the ball I 'couldn't find'?
+                        <br /><br />
+                        <img
+                            className="image"
+                            src="/img/rooswim.jpg"
+                            width="100%"
+                            alt="no image"
+                            class="center"
+                            />
+                        <br />
+                    </ModalBody>
+                </Modal>
+            </React.Fragment>
         );
     }
 }

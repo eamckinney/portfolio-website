@@ -1,11 +1,6 @@
 import React, { Component } from "react";
-import {
-	Nav,
-	Navbar,
-	NavbarBrand,
-	NavbarToggler,
-	Collapse
-} from "reactstrap";
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse,
+	Modal, ModalHeader, ModalBody } from "reactstrap";
 //importing zenscroll makes all target link scrolling smooth...
 import { zenscroll } from "zenscroll";
 
@@ -15,8 +10,17 @@ class Navigation extends Component {
 
 		this.state = {
 			isNavOpen: false,
+			isRooOpen: false
 		};
 	}
+
+    toggleRoo = () => {
+		this.setState({
+			isRooOpen: !this.state.isRooOpen,
+        });
+        
+    };
+
 
 	toggleNav = () => {
 		this.setState({
@@ -27,42 +31,59 @@ class Navigation extends Component {
 
 	render() {
 		return (
-			<Navbar dark sticky="top" expand="md">
-				<NavbarToggler onClick={this.toggleNav} />
-				<Collapse isOpen={this.state.isNavOpen} navbar>
-					<Nav navbar className="nav-center">
-						<ul className="navbar-nav mx-auto">
-							<li className="nav-item rightBorder text-center">
-								<a className="nav-link underline" href="#Home">
-									{" "}
-									<span> Home </span>
-								</a>
-							</li>
-							<li className="nav-item rightBorder text-center">
-								<a className="nav-link underline" href="#About">
-									{" "}
-									About{" "}
-								</a>
-							</li>
-							<li className="nav-item rightBorder text-center">
-								<a className="nav-link underline" href="#Projects">
-									{" "}
-									Projects{" "}
-								</a>
-							</li>
-							<li className="nav-item text-center">
-								<a className="nav-link underline" href="#Connect">
-									{" "}
-									Connect{" "}
-								</a>
-							</li>
-						</ul>
-					</Nav>
-				</Collapse>
-				<NavbarBrand className="site-logo mx-auto" href="#Home">
-					<span className="logo-text">EM</span>
-				</NavbarBrand>
-			</Navbar>
+			<React.Fragment>
+				<Navbar dark sticky="top" expand="md">
+					<NavbarToggler onClick={this.toggleNav} />
+					<Collapse isOpen={this.state.isNavOpen} navbar>
+						<Nav navbar className="nav-center">
+							<ul className="navbar-nav mx-auto">
+								<li className="nav-item rightBorder text-center">
+									<a className="nav-link underline" href="#Home">
+										{" "}
+										<span> Home </span>
+									</a>
+								</li>
+								<li className="nav-item rightBorder text-center">
+									<a className="nav-link underline" href="#About">
+										{" "}
+										About{" "}
+									</a>
+								</li>
+								<li className="nav-item rightBorder text-center">
+									<a className="nav-link underline" href="#Projects">
+										{" "}
+										Projects{" "}
+									</a>
+								</li>
+								<li className="nav-item text-center">
+									<a className="nav-link underline" href="#Connect">
+										{" "}
+										Connect{" "}
+									</a>
+								</li>
+							</ul>
+						</Nav>
+					</Collapse>
+					<NavbarBrand className="site-logo mx-auto">
+						<a onClick={this.toggleRoo}><span className="logo-text">EM</span></a>
+					</NavbarBrand>
+				</Navbar>
+				<Modal isOpen={this.state.isRooOpen} toggle={this.toggleRoo} contentClassName='roo'>
+                    <ModalHeader toggle={this.toggleRoo}>You found me!</ModalHeader>
+                    <ModalBody>
+                        My name is Roo, and I am Emily's dog! When I saw her website, I told her I liked it, but really I thought that she could use some extra flair (AKA this photo of me, Emily, and my other mom Anne, even though I know you're mostly excited about ME). But shhh, don't tell her so that we can all just enjoy how cute I am. I love to play hide-and-seek; can you find all of my favorite hiding spots?
+                        <br /><br />
+                        <img
+                            className="image"
+                            src="/img/rooanne.jpg"
+                            width="100%"
+                            alt="no image"
+                            class="center"
+                            />
+                        <br />
+                    </ModalBody>
+                </Modal>
+			</React.Fragment>
 		);
 	}
 }
