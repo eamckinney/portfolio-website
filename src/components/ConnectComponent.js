@@ -13,9 +13,9 @@ function Contact() {
                                 <br/><br/>
                             </p>
                         
-                            <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/emily-mckinney-427a2779/"><i className="fa fa-lg fa-social fa-linkedin"></i></a>
-                            <a className="btn btn-social-icon btn-github" href="https://github.com/eamckinney"><i className="fa fa-lg fa-social fa-github"></i></a>
-                            <a className="btn btn-social-icon btn-instagram" href="https://www.instagram.com/emily.a.mckinney/"><i className="fa fa-lg fa-social fa-instagram"></i></a>
+                            <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/emily-mckinney-427a2779/" target="_blank"><i className="fa fa-lg fa-social fa-linkedin"></i></a>
+                            <a className="btn btn-social-icon btn-github" href="https://github.com/eamckinney" target="_blank"><i className="fa fa-lg fa-social fa-github"></i></a>
+                            <a className="btn btn-social-icon btn-instagram" href="https://www.instagram.com/emily.a.mckinney/" target="_blank"><i className="fa fa-lg fa-social fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
