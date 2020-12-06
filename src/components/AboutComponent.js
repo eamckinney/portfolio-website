@@ -24,7 +24,7 @@ function About() {
                                     by fiddling around with JavaScript, React, APIs, and machine learning "for fun."
                                     <br/><br/>
                                     I will leave it at that. If you're intrigued, <a href="#Connect">drop me a line.</a> I'd rather chat with you 
-                                    than give everything away on this website, anyway. I hope to hear from you.
+                                    than have a one-sided conversation on this website, anyway. I hope to hear from you.
                                     <br/><br/>
                                     <div className="mb-2">
                                         <b>Some of my skills include:</b>
@@ -57,7 +57,7 @@ function About() {
                 </div>
                 <div className="row">
                     <div className="col first-block-scroll">
-                        <div className="text-center mx-auto" id="scroll-about">
+                        <div className="text-center mx-auto mb-5" id="scroll-about">
                             <a href="#Projects"><p style={{fontSize: "12px"}} data-aos="fade-up" data-aos-duration="2000">Scroll<br /><i class="fa fa-lg fa-angle-double-down" /></p></a>
                         </div>
                     </div>

@@ -23,7 +23,7 @@ class RenderProject extends Component {
         
         return(
             <React.Fragment>
-                <Card className={`project-box project${this.props.project.id}`}>
+                <Card className={`project-box project${this.props.project.id}`} onClick={this.toggleModal}>
                     <CardBody>
                         <CardTitle>{this.props.project.name}</CardTitle>
                         <CardText>{this.props.project.description}</CardText>
@@ -65,7 +65,15 @@ class Projects extends Component {
 
     render() {
 
-        const projects = this.state.projects.map(project => {
+        const projectsLeftCol = this.state.projects.slice(0, 2).map(project => {
+            return(
+                <div key={project.id} className="col-md-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <RenderProject project={project} />
+                </div>
+            );
+        });
+
+        const projectsRightCol = this.state.projects.slice(2, 4).map(project => {
             return(
                 <div key={project.id} className="col-md-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <RenderProject project={project} />
@@ -85,14 +93,20 @@ class Projects extends Component {
                                         Here are a couple of projects I'm working on. 
                                         I've been feeding my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
                                         dabbling with d3.js to play with data visualizations, 
-                                        and working with a local nonprofit to develop an architectural design tool for water.<br/><br/>
+                                        working with a local nonprofit to develop an architectural design tool for water,
+                                        and trying to save my houseplants from myself. <br/><br/>
                                         Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-6">                                
+                            <div class="col-md-3">                                
                                 <div class="row">
-                                    {projects}
+                                    {projectsLeftCol}
+                                </div>
+                            </div>
+                            <div class="col-md-3">                                
+                                <div class="row">
+                                    {projectsRightCol}
                                 </div>
                             </div>
                         </div>
