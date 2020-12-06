@@ -1,4 +1,6 @@
 import React from 'react';
+import { Form, Label, Divider, Rating, Header } from "semantic-ui-react";
+import "semantic-ui-css/semantic.min.css";
 
 
 function About() {
@@ -21,9 +23,34 @@ function About() {
                                     by helping companies understand how people make decisions as a freelance quantitative brand strategist, and 
                                     by fiddling around with JavaScript, React, APIs, and machine learning "for fun."
                                     <br/><br/>
-                                    I will leave it at that. If you're intrigued, drop me a line. I'd rather chat with you 
+                                    I will leave it at that. If you're intrigued, <a href="#Connect">drop me a line.</a> I'd rather chat with you 
                                     than give everything away on this website, anyway. I hope to hear from you.
+                                    <br/><br/>
+                                    <div className="mb-2">
+                                        <b>Some of my skills include:</b>
+                                    </div>
+                                    <div className="mb-2">
+                                        <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Python</div>
+                                        <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>JavaScript</div>
+                                        <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>React</div>
+                                        <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>HTML</div>
+                                        <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>CSS</div>
+                                        <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>R</div>
+                                        <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>SPSS</div>
+                                    </div>
+                                    <div className="mb-2">
+                                        <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Development</div>
+                                        <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Analysis</div>
+                                        <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Quantitative Brand Strategy</div>
+                                    </div>
+                                    <div className="mb-2">
+                                        <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Viz</div>
+                                        <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Scraping</div>
+                                        <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Product Management</div>
+                                    </div>
+                                    
                                 </p>
+                                
                             </div>
                         </div>
                     </div>          

@@ -20,7 +20,6 @@ class Main extends Component {
                             <Home />
                             <About />
                             <Projects />
-                            <Skills />
                             <Connect />
                         </React.Fragment>
                     } />

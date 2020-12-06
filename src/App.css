@@ -158,7 +158,11 @@ a:hover {
     line-height: .9em;
     padding: 15% 5%; }
   .first-block p {
-    padding: 15% 5%; }
+    padding: 5% 5%; }
+
+a.skills {
+    background-color: "#3D405B";
+  }
   
 
 .first-block-scroll {
