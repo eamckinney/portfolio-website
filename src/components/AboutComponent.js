@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
 import "semantic-ui-css/semantic.min.css";
+import ReactGA from 'react-ga';
 
 
 class About extends Component {
@@ -16,11 +17,12 @@ class About extends Component {
 			isRooOpen: !this.state.isRooOpen,
         });
 
-        if (isRooOpen) {
-            gtag('event', 'foundRoo', {
-                'event_name': 'foundRoo',
-                'location': 'about'
-            });
+        if (this.state.isRooOpen) {
+            ReactGA.event({
+                event_name: 'foundRoo',
+                location: 'about'
+              });
+            
         }
         
     };

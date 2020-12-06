@@ -3,6 +3,7 @@ import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse,
 	Modal, ModalHeader, ModalBody } from "reactstrap";
 //importing zenscroll makes all target link scrolling smooth...
 import { zenscroll } from "zenscroll";
+import ReactGA from 'react-ga';
 
 class Navigation extends Component {
 	constructor(props) {
@@ -19,11 +20,11 @@ class Navigation extends Component {
 			isRooOpen: !this.state.isRooOpen,
         });
 		
-		if (isRooOpen) {
-            gtag('event', 'foundRoo', {
-                'event_name': 'foundRoo',
-                'location': 'navBar'
-            });
+		if (this.state.isRooOpen) {
+            ReactGA.event({
+                event_name: 'foundRoo',
+                location: 'navBar'
+              });
 		}
 		
     };

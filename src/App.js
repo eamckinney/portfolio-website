@@ -4,11 +4,14 @@ import { BrowserRouter } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
+import ReactGA from 'react-ga';
+
 
 class App extends Component {
     
     componentDidMount() {
         AOS.init();
+        ReactGA.initialize('G-6TC5ZMTK1L');
     }
 
     render() {
