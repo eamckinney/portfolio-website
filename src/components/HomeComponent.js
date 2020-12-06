@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, CardTitle, CardBody, CardText } from "reactstrap";
 
 function Home() {
     return (

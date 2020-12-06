@@ -65,13 +65,15 @@ class Navigation extends Component {
 						</Nav>
 					</Collapse>
 					<NavbarBrand className="site-logo mx-auto">
-						<a onClick={this.toggleRoo}><span className="logo-text">EM</span></a>
+						<span className="logo-text" onClick={this.toggleRoo}>EM</span>
 					</NavbarBrand>
 				</Navbar>
 				<Modal isOpen={this.state.isRooOpen} toggle={this.toggleRoo} contentClassName='roo'>
                     <ModalHeader toggle={this.toggleRoo}>You found me!</ModalHeader>
                     <ModalBody>
-                        My name is Roo, and I am Emily's dog! When I saw her website, I told her I liked it, but really I thought that she could use some extra flair (AKA this photo of me, Emily, and my other mom Anne, even though I know you're mostly excited about ME). But shhh, don't tell her so that we can all just enjoy how cute I am. I love to play hide-and-seek; can you find all of my favorite hiding spots?
+                        My name is Roo, and I am Emily's dog! When I saw her website, I told her I liked it, but really I thought that she could use some extra flair (AKA this photo of me, Emily, and my other mom Anne, even though I know you're mostly excited about ME). But shhh, don't tell her so that we can all just enjoy how cute I am. 
+						<br /><br />
+						<b>I love to play hide-and-seek; can you find all of my favorite hiding spots?</b>
                         <br /><br />
                         <img
                             className="image"

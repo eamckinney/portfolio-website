@@ -35,7 +35,7 @@ class About extends Component {
                                         I will try to keep it simple. 
                                         <br/><br/>
                                         At the center of who I am, <b>I really like to solve puzzles and learn new things.</b> Right now, that is taking 
-                                        shape by learning how to write Python code and be a p<a onClick={this.toggleRoo}><span className='secret'>roo</span></a>ject manager at a gender research + tech startup called Equilo,
+                                        shape by learning how to write Python code and be a p<span className='secret' onClick={this.toggleRoo}>roo</span>ject manager at a gender research + tech startup called Equilo,
                                         by helping companies understand how people make decisions as a freelance quantitative brand strategist, and 
                                         by fiddling around with JavaScript, React, APIs, and machine learning "for fun."
                                         <br/><br/>
@@ -80,7 +80,9 @@ class About extends Component {
                 <Modal isOpen={this.state.isRooOpen} toggle={this.toggleRoo} contentClassName='roo'>
                     <ModalHeader toggle={this.toggleRoo}>You found me!</ModalHeader>
                     <ModalBody>
-                        My name is Roo, and I am Emily's dog! When I saw her website, I told her I liked it, but really I thought that she could use some extra flair (aka ME). So here I am! But shhh, don't tell her so that we can all just enjoy how cute I am. I love to get scratches behind my ears when my mom is working; can you find all of the other places I've hidden myself while she was petting me?
+                        My name is Roo, and I am Emily's dog! When I saw her website, I told her I liked it, but really I thought that she could use some extra flair (aka ME). So here I am! But shhh, don't tell her so that we can all just enjoy how cute I am. 
+                        <br /><br />
+                        <b>I love to get scratches behind my ears when my mom is working; can you find all of the other places I've hidden myself while she was petting me?</b>
                         <br /><br />
                         <img
                             className="image"

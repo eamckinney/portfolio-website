@@ -4,7 +4,6 @@ import Navigation from './NavComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
 import Projects from './ProjectsComponent';
-import Skills from './SkillsComponent';
 import Connect from './ConnectComponent';
 import RouteFilter from './RouteFilterComponent.js';
 

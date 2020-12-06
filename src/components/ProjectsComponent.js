@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardTitle, CardBody, CardText,
+import { Card, CardTitle, CardBody,
     Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import { PROJECTS } from '../shared/projects';
 import { Link } from "react-router-dom";
@@ -123,7 +123,7 @@ class Projects extends Component {
                             <div className="row">
                                 <div className="col first-block-scroll">
                                     <div className="text-center mx-auto mb-5" id="scroll-about">
-                                        <a href="#Connect"><p style={{fontSize: "12px"}} data-aos="fade-up" data-aos-duration="2000">Sc<a onClick={this.toggleRoo}><span className='secret'>roo</span></a>ll<br /><i class="fa fa-lg fa-angle-double-down" /></p></a>
+                                        <a href="#Connect"><p style={{fontSize: "12px"}} data-aos="fade-up" data-aos-duration="2000">Sc<span className='secret' onClick={this.toggleRoo}>roo</span>ll<br /><i class="fa fa-lg fa-angle-double-down" /></p></a>
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +133,9 @@ class Projects extends Component {
                 <Modal isOpen={this.state.isRooOpen} toggle={this.toggleRoo} contentClassName='roo'>
                     <ModalHeader toggle={this.toggleRoo}>You found me!</ModalHeader>
                     <ModalBody>
-                        My name is Roo, and I am Emily's dog! When I saw her website, I told her I liked it, but really I thought that she could use some extra flair (aka ME). So here I am! But shhh, don't tell her so that we can all just enjoy how cute I am. I love to go swimming and playing fetch outside; can you find all of the other places I've hidden myself while my mom was looking for the ball I 'couldn't find'?
+                        My name is Roo, and I am Emily's dog! When I saw her website, I told her I liked it, but really I thought that she could use some extra flair (aka ME). So here I am! But shhh, don't tell her so that we can all just enjoy how cute I am. 
+                        <br /><br />
+                        <b>I love to go swimming and playing fetch outside; can you find all of the other places I've hidden myself while my mom was looking for the ball that I "couldn't find"?</b>
                         <br /><br />
                         <img
                             className="image"
