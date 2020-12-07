@@ -29,7 +29,7 @@ class RenderProject extends Component {
         
         const skills = this.props.project.skills.map(skill => {
             return(
-                <div key={skill} className="ui label mini" style={{backgroundColor: "#fff9f5", color: this.props.project.color}}>{skill}</div>
+                <div key={skill} className="ui label tiny" style={{backgroundColor: "#fff9f5", color: this.props.project.color}}>{skill}</div>
             );
         });
 
