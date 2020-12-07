@@ -12,7 +12,7 @@ class App extends Component {
     
     componentDidMount() {
         AOS.init();
-        ReactGA.initialize('Your Unique ID');
+        ReactGA.initialize('G-6TC5ZMTK1L');
     }
 
     render() {
