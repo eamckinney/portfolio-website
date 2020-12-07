@@ -38,6 +38,9 @@ class Connect extends Component {
                         <p className="text-center">
                             You've made it to the end. But have you seen all there is to see? Take another look. Or three.
                         </p>
+                        <p className="text-center" style={{fontSize: '.8em'}}>
+                            &copy; 2020 Emily McKinney. All rights reserved. This site was built by hand.
+                        </p>
                     </div>
                 </div>
             </footer>

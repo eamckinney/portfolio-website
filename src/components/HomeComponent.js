@@ -15,7 +15,7 @@ function Home() {
                 </div>
             </div>
             <div className="row">
-                <div className="col intro-block pb-5 pt-5"></div>
+                <div className="col intro-block pb-5 pt-4"></div>
             </div>
             <div className="row">
                 <div className="col intro-block pb-5 pt-5">

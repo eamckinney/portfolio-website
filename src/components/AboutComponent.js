@@ -44,9 +44,6 @@ class About extends Component {
                                 </div>
                                 <div className="col-sm-6">
                                     <p className="text-left" data-aos="fade-up" data-aos-duration="1000">
-                                        What do people even write in these sections? How do I tell you about myself without sounding arrogant or cliché?
-                                        I will try to keep it simple. 
-                                        <br/><br/>
                                         At the center of who I am, <b>I really like to solve puzzles and learn new things.</b> Right now, that is taking 
                                         shape by learning how to write Python code and be a p<span className='secret' onClick={this.toggleRoo}>roo</span>ject manager at a gender research + tech startup called Equilo,
                                         by helping companies understand how people make decisions as a freelance quantitative brand strategist, and 
@@ -59,23 +56,23 @@ class About extends Component {
                                             <b>Some of my skills include:</b>
                                         </div>
                                         <div className="mb-2">
-                                            <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Python</div>
-                                            <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>JavaScript</div>
-                                            <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>React</div>
-                                            <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>HTML</div>
-                                            <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>CSS</div>
-                                            <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>R</div>
-                                            <div className="ui label mini" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>SPSS</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Python</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>JavaScript</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>React</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>HTML</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>CSS</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>R</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>SPSS</div>
                                         </div>
                                         <div className="mb-2">
-                                            <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Development</div>
-                                            <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Analysis</div>
-                                            <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Quantitative Brand Strategy</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Development</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Analysis</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Quantitative Brand Strategy</div>
                                         </div>
                                         <div className="mb-2">
-                                            <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Viz</div>
-                                            <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Scraping</div>
-                                            <div className="ui label mini" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Product Management</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Viz</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Scraping</div>
+                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Product Management</div>
                                         </div>
                                     </p>
                                 </div>

@@ -7,7 +7,7 @@ body {
   background-size: cover;
 
   font-family: "Lora", serif;
-  font-size: .9em;
+  font-size: 1em;
   color: #fff9f5;
 }
 
@@ -17,7 +17,7 @@ h1, h2, h3, .card-title, button, .modal-title {
   font-family: "Lora", serif; }
 
 h1 {
-  font-size: 9em; }
+  font-size: 8em; }
 
 h2 {
   font-size: 5em; }
@@ -84,7 +84,7 @@ h2 {
   transform: translate(-50%, -50%) rotate(0deg);
   transition: transform .4s ease-in-out;
   font-weight: bold;
-  font-size: .5em; }
+  font-size: .6em; }
 
 .site-logo:hover {
   opacity: 1;
@@ -111,7 +111,7 @@ h2 {
       }
   .intro-block .sub-heading {
     padding-right: 40%;
-    font-size: 1em; }
+    font-size: 1.1em; }
   
 #scroll {
   opacity: 0.5;
@@ -193,7 +193,7 @@ a:hover {
     line-height: .9em;
     padding: 15% 5%; }
   .first-block p {
-    padding: 5% 5%; }
+    padding: 10% 5%; }
 
 a.skills {
     background-color: "#3D405B";
