@@ -15,6 +15,10 @@ class Navigation extends Component {
 		};
 	}
 
+	componentDidMount() {
+        ReactGA.initialize('G-6TC5ZMTK1L');   
+    }
+
     toggleRoo = () => {
 		this.setState({
 			isRooOpen: !this.state.isRooOpen,

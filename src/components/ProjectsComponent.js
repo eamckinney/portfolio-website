@@ -14,6 +14,9 @@ class RenderProject extends Component {
         };
     }
     
+    componentDidMount() {
+        ReactGA.initialize('G-6TC5ZMTK1L');   
+    }
     
 
     toggleModal = () => {
