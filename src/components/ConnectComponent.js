@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component }from 'react';
 import ReactGA from 'react-ga';
 
 class Connect extends Component {
