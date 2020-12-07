@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardTitle, CardBody,
     Button, Modal, ModalHeader, ModalBody } from "reactstrap";
+import ReactGA from 'react-ga';
 import { PROJECTS } from '../shared/projects';
 import { Link } from "react-router-dom";
 
@@ -80,7 +81,10 @@ class Projects extends Component {
         });
 
         if (this.state.isRooOpen) {
-            
+            ReactGA.event({
+                event_name: 'foundRoo',
+                location: 'projects'
+            });
         }
         
     };

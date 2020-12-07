@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
+import ReactGA from 'react-ga';
 import "semantic-ui-css/semantic.min.css";
 
 
@@ -17,7 +18,10 @@ class About extends Component {
         });
 
         if (this.state.isRooOpen) {
-            
+            ReactGA.event({
+                event_name: 'foundRoo',
+                location: 'about'
+            });
         }
         
     };
