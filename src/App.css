@@ -333,6 +333,11 @@ a:hover {
   background-color: #E07A5F;
 }
 
+#Challenge {
+  background-color: #000000;
+  color: #fff9f5;
+}
+
 @media (max-width: 1200px) {
   h1 {
     font-size: 7em; } }

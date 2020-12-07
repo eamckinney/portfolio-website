@@ -20,6 +20,13 @@ function Contact() {
                     </div>
                 </div>
             </div>
+            <div className="row">
+                <div className="col p-3" id="Challenge">
+                    <p className="text-center">
+                        You've made it to the end. But have you seen all there is to see? Take another look. Or three.
+                    </p>
+                </div>
+            </div>
         </footer>
     );
 }
