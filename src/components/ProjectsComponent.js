@@ -82,8 +82,9 @@ class Projects extends Component {
 
         if (this.state.isRooOpen) {
             ReactGA.event({
-                event_name: 'foundRoo',
-                location: 'projects'
+                category: 'User',
+                action: 'Found Roo',
+                label: 'Projects'
             });
         }
         

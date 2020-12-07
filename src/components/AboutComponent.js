@@ -19,8 +19,9 @@ class About extends Component {
 
         if (this.state.isRooOpen) {
             ReactGA.event({
-                event_name: 'foundRoo',
-                location: 'about'
+                category: 'User',
+                action: 'Found Roo',
+                label: 'About'
             });
         }
         
