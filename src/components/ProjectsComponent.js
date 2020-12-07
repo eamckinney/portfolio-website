@@ -23,11 +23,20 @@ class RenderProject extends Component {
 
     render() {
         
+        const skills = this.props.project.skills.map(skill => {
+            return(
+                <div key={skill} className="ui label mini" style={{backgroundColor: "#fff9f5", color: this.props.project.color}}>{skill}</div>
+            );
+        });
+
         return(
             <React.Fragment>
                 <Card className={`project-box project${this.props.project.id}`} onClick={this.toggleModal}>
                     <CardBody>
                         <CardTitle>{this.props.project.name}</CardTitle>
+                        <div className="mb-2">
+                            {skills}
+                        </div>
                         {this.props.project.description}
                         <Button className="btn-outline-light" onClick={this.toggleModal}>See More</Button>
                     </CardBody>
