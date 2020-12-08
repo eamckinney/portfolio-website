@@ -55,24 +55,20 @@ class About extends Component {
                                         <div className="mb-2">
                                             <b>Some of my skills include:</b>
                                         </div>
-                                        <div className="mb-2">
-                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Python</div>
-                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>JavaScript</div>
-                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>React</div>
-                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>HTML</div>
-                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>CSS</div>
-                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>R</div>
-                                            <div className="ui label tiny" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>SPSS</div>
-                                        </div>
-                                        <div className="mb-2">
-                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Development</div>
-                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Analysis</div>
-                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Quantitative Brand Strategy</div>
-                                        </div>
-                                        <div className="mb-2">
-                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Viz</div>
-                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Scraping</div>
-                                            <div className="ui label tiny" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Product Management</div>
+                                        <div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Python</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>JavaScript</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>React</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>HTML</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>CSS</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>R</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>SPSS</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Development</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Analysis</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Quantitative Brand Strategy</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Viz</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Scraping</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Product Management</div>
                                         </div>
                                     </p>
                                 </div>
