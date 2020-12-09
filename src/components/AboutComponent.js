@@ -44,10 +44,12 @@ class About extends Component {
                                 </div>
                                 <div className="col-sm-6">
                                     <p className="text-left" data-aos="fade-up" data-aos-duration="1000">
-                                        At the center of who I am, <b>I really like to solve puzzles and learn new things.</b> Right now, that is taking 
-                                        shape by learning how to write Python code and be a p<span className='secret' onClick={this.toggleRoo}>roo</span>ject manager at a gender research + tech startup called Equilo,
-                                        by helping companies understand how people make decisions as a freelance quantitative brand strategist, and 
-                                        by fiddling around with JavaScript, React, APIs, and machine learning "for fun."
+                                        At the center of who I am, <b>I really like to solve puzzles and learn new things.</b> 
+                                        <br/><br/>
+                                        Right now, that is taking 
+                                        shape by writing Python code and working as a p<span className='secret' onClick={this.toggleRoo}>roo</span>ject manager at a gender research + tech startup,
+                                        helping companies understand how people make decisions as a freelance quantitative brand strategist, and 
+                                        fiddling around with JavaScript, React, APIs, and machine learning "for fun." When I am faced with a challenge, I think through the best ways to solve it, and I figure out how to make it happen.
                                         <br/><br/>
                                         I will leave it at that. If you're intrigued, <a href="#Connect">drop me a line.</a> I'd rather chat with you 
                                         than have a one-sided conversation on this website, anyway. I hope to hear from you.
@@ -69,6 +71,13 @@ class About extends Component {
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Data Viz</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Scraping</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Product Management</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#E07A5F", color: "#fff9f5"}}>Communication</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#E07A5F", color: "#fff9f5"}}>Problem Solving</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#E07A5F", color: "#fff9f5"}}>Resourcefulness</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#E07A5F", color: "#fff9f5"}}>Curiosity</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#E07A5F", color: "#fff9f5"}}>Collaboration</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#E07A5F", color: "#fff9f5"}}>Empathy</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#E07A5F", color: "#fff9f5"}}>Dependability</div>
                                         </div>
                                     </p>
                                 </div>
