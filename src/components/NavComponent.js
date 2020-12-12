@@ -65,7 +65,7 @@ class Navigation extends Component {
 						</Nav>
 					</Collapse>
 					<NavbarBrand className="site-logo mx-auto">
-						<span id="roo-nav" className="logo-text" onClick={this.toggleRoo}>EM</span>
+						<span id="roo-nav" className="logo-text secret" onClick={this.toggleRoo}>EM</span>
 					</NavbarBrand>
 				</Navbar>
 				<Modal isOpen={this.state.isRooOpen} toggle={this.toggleRoo} contentClassName='roo'>
