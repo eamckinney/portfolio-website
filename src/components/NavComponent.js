@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse,
 	Modal, ModalHeader, ModalBody } from "reactstrap";
-import ReactGA from 'react-ga';
 //importing zenscroll makes all target link scrolling smooth...
 import { zenscroll } from "zenscroll";
 
@@ -15,22 +14,10 @@ class Navigation extends Component {
 		};
 	}
 
-	componentDidMount() {
-        ReactGA.initialize('G-6TC5ZMTK1L');   
-    }
-
     toggleRoo = () => {
 		this.setState({
 			isRooOpen: !this.state.isRooOpen,
         });
-		
-		if (this.state.isRooOpen) {
-			ReactGA.event({
-                category: 'User',
-                action: 'Found Roo',
-                label: 'NavBar'
-            });
-		}
 		
     };
 
@@ -78,7 +65,7 @@ class Navigation extends Component {
 						</Nav>
 					</Collapse>
 					<NavbarBrand className="site-logo mx-auto">
-						<span className="logo-text" onClick={this.toggleRoo}>EM</span>
+						<span id="roo-nav" className="logo-text" onClick={this.toggleRoo}>EM</span>
 					</NavbarBrand>
 				</Navbar>
 				<Modal isOpen={this.state.isRooOpen} toggle={this.toggleRoo} contentClassName='roo'>

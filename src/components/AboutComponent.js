@@ -1,6 +1,5 @@
 import React, { Component} from 'react';
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
-import ReactGA from 'react-ga';
 import "semantic-ui-css/semantic.min.css";
 
 
@@ -12,22 +11,10 @@ class About extends Component {
         };
     }
 
-    componentDidMount() {
-        ReactGA.initialize('G-6TC5ZMTK1L');   
-    }
-
     toggleRoo = () => {
 		this.setState({
 			isRooOpen: !this.state.isRooOpen,
         });
-
-        if (this.state.isRooOpen) {
-            ReactGA.event({
-                category: 'User',
-                action: 'Found Roo',
-                label: 'About'
-            });
-        }
         
     };
     
@@ -47,7 +34,7 @@ class About extends Component {
                                         At the center of who I am, <b>I really like to solve puzzles and learn new things.</b> 
                                         <br/><br/>
                                         Right now, that is taking 
-                                        shape by writing Python code and working as a p<span className='secret' onClick={this.toggleRoo}>roo</span>ject manager at a gender research + tech startup,
+                                        shape by writing Python code and working as a p<span id="roo-about" className='secret' onClick={this.toggleRoo}>roo</span>ject manager at a gender research + tech startup,
                                         helping companies understand how people make decisions as a freelance quantitative brand strategist, and 
                                         fiddling around with JavaScript, React, APIs, and machine learning "for fun." When I am faced with a challenge, I think through the best ways to solve it, and I figure out how to make it happen.
                                         <br/><br/>

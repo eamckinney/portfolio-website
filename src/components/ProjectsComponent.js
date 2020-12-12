@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Card, CardTitle, CardBody,
     Button, Modal, ModalHeader, ModalBody } from "reactstrap";
-import ReactGA from 'react-ga';
 import { PROJECTS } from '../shared/projects';
 import { Link } from "react-router-dom";
 
@@ -13,11 +12,6 @@ class RenderProject extends Component {
             isModalOpen: false,
         };
     }
-    
-    componentDidMount() {
-        ReactGA.initialize('G-6TC5ZMTK1L');   
-    }
-    
 
     toggleModal = () => {
 		this.setState({
@@ -83,14 +77,6 @@ class Projects extends Component {
 			isRooOpen: !this.state.isRooOpen,
         });
 
-        if (this.state.isRooOpen) {
-            ReactGA.event({
-                category: 'User',
-                action: 'Found Roo',
-                label: 'Projects'
-            });
-        }
-        
     };
 
     render() {
@@ -144,7 +130,7 @@ class Projects extends Component {
                             <div className="row">
                                 <div className="col first-block-scroll">
                                     <div className="text-center mx-auto mb-5" id="scroll-about">
-                                        <a href="#Connect"><p style={{fontSize: "12px"}} data-aos="fade-up" data-aos-duration="2000">Sc<span className='secret' onClick={this.toggleRoo}>roo</span>ll<br /><i class="fa fa-lg fa-angle-double-down" /></p></a>
+                                        <a href="#Connect"><p style={{fontSize: "12px"}} data-aos="fade-up" data-aos-duration="2000">Sc<span id="roo-projects" className='secret' onClick={this.toggleRoo}>roo</span>ll<br /><i class="fa fa-lg fa-angle-double-down" /></p></a>
                                     </div>
                                 </div>
                             </div>

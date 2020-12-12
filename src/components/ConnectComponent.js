@@ -1,17 +1,7 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
 
 class Connect extends Component {
 
-    componentDidMount() {
-        ReactGA.initialize('G-6TC5ZMTK1L');
-
-        ReactGA.event({
-            category: 'User',
-            action: 'ComponentDidMount',
-            label: 'Connect'
-        });
-    }
 
     render() {
         return(
