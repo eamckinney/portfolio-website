@@ -16,9 +16,9 @@ class Connect extends Component {
                                     <br/><br/>
                                 </p>
                             
-                                <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/emily-mckinney-427a2779/" target="_blank"><i className="fa fa-lg fa-social fa-linkedin"></i></a>
-                                <a className="btn btn-social-icon btn-github" href="https://github.com/eamckinney" target="_blank"><i className="fa fa-lg fa-social fa-github"></i></a>
-                                <a className="btn btn-social-icon btn-instagram" href="https://www.instagram.com/emily.a.mckinney/" target="_blank"><i className="fa fa-lg fa-social fa-instagram"></i></a>
+                                <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/emily-mckinney-427a2779/" target="_blank" rel="noopener noreferrer"><i className="fa fa-lg fa-social fa-linkedin"></i></a>
+                                <a className="btn btn-social-icon btn-github" href="https://github.com/eamckinney" target="_blank" rel="noopener noreferrer"><i className="fa fa-lg fa-social fa-github"></i></a>
+                                <a className="btn btn-social-icon btn-instagram" href="https://www.instagram.com/emily.a.mckinney/" target="_blank" rel="noopener noreferrer"><i className="fa fa-lg fa-social fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ class Connect extends Component {
                             You've made it to the end. But have you seen all there is to see? Take another look. Or three.
                         </p>
                         <p className="text-center" style={{fontSize: '.8em'}}>
-                            &copy; 2020 Emily McKinney. All rights reserved. This site was built by hand.
+                            &copy; 2021 Emily McKinney. All rights reserved. This site was built by hand.
                         </p>
                     </div>
                 </div>

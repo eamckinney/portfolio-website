@@ -7,23 +7,35 @@ export const PROJECTS = [
         image: "/img/betaforbeta.png",
         color: "#3D405B",
         description: <p>I built a simple web app that allows users to filter climbing routes by the route's style using key words sourced from the route's description.<br /><br /></p>,
-        longDescription: <p>I built a simple web app that allows users to filter climbing routes by the route's style using key words sourced from the route's description. Most climbing guides allow users to filter by location, type, grade, and star-rating, but few if any allow people to filter by route style. My next goal is to create a machine learning algorithm to recommend routes that a user may like based on ratings and reviews of previous routes.</p>,
+        longDescription: <p>I built a simple web app that allows users to filter climbing routes by the route's style using key words sourced from the route's description. Most climbing guides allow users to filter by location, type, grade, and star-rating, but few if any allow people to filter by route style. My next goal is to create a machine learning algorithm to recommend routes that a user may like based on ratings and reviews of previous routes.<br/><br/></p>,
         skills: ["JavaScript","React","Python"],
         buttonText: "Check it out",
         url: "/betaforbeta"
     },
     {
         id: 1,
+        name: "Equilo",
+        image: "/img/equilo_heatmap.png",
+        color: "#E07A5F",
+        description: <p>At Equilo, I have collected data from global APIs, improved data visualization using Chart.js, built a heatmap using Google Geocharts, and built new API routes to improve data loading efficiency using Express and Node.js. <br /><br /></p>,
+        longDescription: <p>I have been working for Equilo, a gender research and international development startup, for nearly 3 years, but have shifted into a Python and web developer role about a year ago. I have collected data from global APIs, calculated Gender Equality indices, improved data visualization using Chart.js, built a heatmap using Google Geocharts, and built new API routes to improve data loading efficiency using Express and Node.js.<br/><br/></p>,
+        skills: ["HTML","Vue.js","Node.js","MongoDB"],
+        buttonText: "Back to projects",
+        url: ""
+    },
+    {
+        id: 2,
         name: "Brand Health Graphic",
         image: "/img/d3dataviz.png",
-        color: "#E07A5F",
-        description: <p>This interactive graphic was built with d3.js, and combines more than 300 unique time series data points into a simple and interactive view.<br /><br /><br /><br /></p>,
+        color: "#81B29A",
+        description: <p>This interactive graphic was built with d3.js, and combines more than 300 unique time series data points into a simple and interactive view.<br /><br /></p>,
         longDescription: <p>This interactive graphic was built with d3.js, and combines more than 300 unique time series data points into a simple and interactive view.</p>,
         skills: ["JavaScript","D3.js"],
         buttonText: "Back to projects",
         url: ""
     },
-    {
+    
+    /*{
         id: 2,
         name: "Drawing Water",
         image: "/img/drawingwater.png",
@@ -33,7 +45,7 @@ export const PROJECTS = [
         skills: ["HTML","CSS","JavaScript"],
         buttonText: "Back to projects",
         url: ""
-    },
+    },*/
     {
         id: 3,
         name: "Water Your Plants!",

@@ -3,6 +3,7 @@ import { Card, CardTitle, CardBody,
     Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import { PROJECTS } from '../shared/projects';
 import { Link } from "react-router-dom";
+import "../App.css";
 
 
 class RenderProject extends Component {
@@ -40,15 +41,15 @@ class RenderProject extends Component {
                     </CardBody>
                 </Card>
 
-                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} contentClassName={`project${this.props.project.id}`}>
-                    <ModalHeader toggle={this.toggleModal}>{this.props.project.name}</ModalHeader>
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} contentClassName={`project${this.props.project.id} wide-modal`}>
+                    <ModalHeader toggle={this.toggleModal} contentClassName="modal-title">{this.props.project.name}</ModalHeader>
                     <ModalBody>
                         {this.props.project.longDescription}
                         <img
                             className="image"
                             src={this.props.project.image}
-                            width="100%"
-                            alt="no image"
+                            height="450px"
+                            alt="project screenshot"
                             class="center"
                             />
                         <br />
@@ -110,7 +111,7 @@ class Projects extends Component {
                                             Here are a couple of projects I'm working on. 
                                             I've been feeding my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
                                             dabbling with d3.js to play with data visualizations, 
-                                            working with a local nonprofit to develop an architectural design tool for water,
+                                            working at a gender research startup to build an app to help with international development projects,
                                             and trying to save my houseplants from myself. <br/><br/>
                                             Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
                                         </p>
@@ -148,7 +149,7 @@ class Projects extends Component {
                             className="image"
                             src="/img/rooswim.jpg"
                             width="100%"
-                            alt="no image"
+                            alt="cute dog"
                             class="center"
                             />
                         <br />

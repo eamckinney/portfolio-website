@@ -34,9 +34,9 @@ class About extends Component {
                                         At the center of who I am, <b>I really like to solve puzzles and learn new things.</b> 
                                         <br/><br/>
                                         Right now, that is taking 
-                                        shape by writing Python code and working as a p<span id="roo-about" className='secret' onClick={this.toggleRoo}>roo</span>ject manager at a gender research + tech startup,
+                                        shape by writing code as a Python and web develope<span id="roo-about" className='secret' onClick={this.toggleRoo}>roo</span> at a gender research + tech startup,
                                         helping companies understand how people make decisions as a freelance quantitative brand strategist, and 
-                                        fiddling around with JavaScript, React, APIs, and machine learning "for fun." When I am faced with a challenge, I think through the best ways to solve it, and I figure out how to make it happen.
+                                        fiddling around with JavaScript, React, APIs, and data visualization "for fun." When I am faced with a challenge, I think through the best ways to solve it, and I figure out how to make it happen.
                                         <br/><br/>
                                         I will leave it at that. If you're intrigued, <a href="#Connect">drop me a line.</a> I'd rather chat with you 
                                         than have a one-sided conversation on this website, anyway. I hope to hear from you.
@@ -47,7 +47,8 @@ class About extends Component {
                                         <div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Python</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>JavaScript</div>
-                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>React</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>React.js</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Vue.js</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>HTML</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>CSS</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>R</div>
@@ -90,7 +91,7 @@ class About extends Component {
                             className="image"
                             src="/img/roo.jpg"
                             width="100%"
-                            alt="no image"
+                            alt="cute dog"
                             class="center"
                             />
                         <br />
