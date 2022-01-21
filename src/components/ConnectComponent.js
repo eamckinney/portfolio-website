@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEgg } from '@fortawesome/free-solid-svg-icons'
 
 class Connect extends Component {
 
@@ -26,8 +28,10 @@ class Connect extends Component {
                 <div className="row">
                     <div className="col p-3" id="Challenge">
                         <p className="text-center">
-                            You've made it to the end. But have you seen all there is to see? Take another look. Or three.
+                            You've made it to the end. But have you seen all there is to see? Take another look. Or three. 
+                            <FontAwesomeIcon icon={faEgg} className="ml-1"/>
                         </p>
+                        
                         <p className="text-center" style={{fontSize: '.8em'}}>
                             &copy; 2021 Emily McKinney. All rights reserved. This site was built by hand.
                         </p>

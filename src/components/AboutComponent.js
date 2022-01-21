@@ -34,12 +34,12 @@ class About extends Component {
                                         At the center of who I am, <b>I really like to solve puzzles and learn new things.</b> 
                                         <br/><br/>
                                         Right now, that is taking 
-                                        shape by writing code as a Python and web develope<span id="roo-about" className='secret' onClick={this.toggleRoo}>roo</span> at a gender research + tech startup,
+                                        shape by writing code as a freelance Python and web develope<span id="roo-about" className='secret' onClick={this.toggleRoo}>roo</span>,
                                         helping companies understand how people make decisions as a freelance quantitative brand strategist, and 
-                                        fiddling around with JavaScript, React, APIs, and data visualization "for fun." When I am faced with a challenge, I think through the best ways to solve it, and I figure out how to make it happen.
+                                        fiddling around with JavaScript, React, APIs, and data visualization "for fun." When I am faced with a challenge, 
+                                        I think through the best ways to solve it, and I figure out how to make it happen.
                                         <br/><br/>
-                                        I will leave it at that. If you're intrigued, <a href="#Connect">drop me a line.</a> I'd rather chat with you 
-                                        than have a one-sided conversation on this website, anyway. I hope to hear from you.
+                                        I will leave it at that. <a href="#Connect">Drop me a line.</a> I hope to hear from you.
                                         <br/><br/>
                                         <div className="mb-2">
                                             <b>Some of my skills include:</b>
