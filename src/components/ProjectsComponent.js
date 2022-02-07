@@ -110,13 +110,15 @@ class Projects extends Component {
                                         </div>
                                         <div class="col-md-6"> 
                                             <div key='hundredDays' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                                                <Card className={`project-box hundred`} onClick="">
-                                                    <CardBody>
-                                                        <CardTitle>100 Days of Code</CardTitle>
-                                                        On February 3, 2022, I began a #100DaysOfCode challenge.
-                                                        <Button className="btn-outline-light ml-3" onClick="">Check out my logbook.</Button>
-                                                    </CardBody>
-                                                </Card>
+                                                <Link to="/100daysofcode">
+                                                    <Card className={`project-box hundred`}>
+                                                        <CardBody>
+                                                            <CardTitle>100 Days of Code</CardTitle>
+                                                            On February 3, 2022, I began a #100DaysOfCode challenge.
+                                                            <Link to="/100daysofcode"><Button className="btn-outline-light ml-3">Check out my logbook.</Button></Link>
+                                                        </CardBody>
+                                                    </Card>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
