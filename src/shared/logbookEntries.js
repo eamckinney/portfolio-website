@@ -50,4 +50,19 @@ export const ENTRIES = [
     learned: "Helped a landscape architect friend visualize what a website could look like for a potential new business venture. Hoping to help them create the website when they are ready to take that step forward.",
     resources: ["None"]
   },
+  {
+    id: 4,
+    day: "Day 5",
+    title: "Logbook improvements",
+    date: "Wednesday, February 9, 2022",
+    tools: "JavaScript, React.js",
+    url: "emilyamckinney.com/100daysofcode",
+    learned: "Learned about using ternary operators within JSX to display elements based on a condition.",
+    resources: ["https://stackoverflow.com/questions/44046037/if-else-statement-inside-jsx-reactjs",
+      "https://reactjs.org/docs/faq-ajax.html",
+      "https://www.opengraph.io/documentation/",
+      "https://dev.to/ilonacodes/frontend-shorts-how-to-create-link-content-previewer-with-react-vue-and-vanilla-javascript-1pm1",
+      "https://react.semantic-ui.com/views/card/#types-card",
+    "https://stackoverflow.com/questions/1368264/how-to-extract-the-hostname-portion-of-a-url-in-javascript"]
+  },
 ];

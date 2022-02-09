@@ -1,10 +1,11 @@
-import React, { Component, useState } from "react";
-import { Form, Label, Divider, Rating, Header } from "semantic-ui-react";
+import React, { useState } from "react";
+import { Card, Divider, Grid } from "semantic-ui-react";
 import { ENTRIES } from '../shared/logbookEntries';
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "../App.css";
 import "../HundredDays.css";
+import ResourceCard from "./ResourceCard.js";
 
 
 export default function HundredDays() {
@@ -30,10 +31,12 @@ export default function HundredDays() {
   });
 
   const entryText = selectedEntry.map(entry => {
-    
-    const resources = entry.resources.map(resource => {
+
+    const resourceCards = entry.resources.map(resource => {
       return(
-        resource.str == 'None' ? <li><a href={resource} target="_blank">{resource}</a></li> : <li>{resource}</li>
+        resource.str != 'None' ? (
+          <ResourceCard url={resource} />
+        ) : {resource}
       );
     });
 
@@ -54,12 +57,15 @@ export default function HundredDays() {
             <b>What I did / what I learned: </b>
             {entry.learned}
           </p>
-          <span className="logPara">
+          <p className="logPara">
             <b>Additional resources used: </b>
-            <ul style={{"lineHeight": "1.3"}}>
-              {resources}
-            </ul>
-          </span>
+          </p>
+          <Grid.Row stretched>
+            <Card.Group itemsPerRow={5}>
+              {resourceCards}
+            </Card.Group>
+          </Grid.Row>
+          
           
           
         </div>
