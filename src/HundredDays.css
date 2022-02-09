@@ -1,0 +1,95 @@
+.hundredDaysPage {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background: #fff9f5;
+  height: 100vh;
+}
+
+.appTitle {
+  color: rgba(0, 0, 0, .9) ;;
+}
+
+.appStyle {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 30px 30px 30px 30px;
+  height: 65vh;
+}
+
+h1, h2, h3, h4, h5, h6, .card-title, button, .modal-title {
+  font-family: "Lora", serif !important; }
+
+.logCol {
+  border-radius: 30px 0 0 30px;
+  padding: 10px 25px 10px 25px; 
+  background: rgba(0, 0, 0, .9) ;
+  text-align: right;
+  height: 65vh;
+  overflow: auto;
+}
+
+.logTitle {
+  border-radius: 25px 0px 0px 25px;
+  padding: 15px; 
+}
+
+.logTitle:hover {
+  background: #E4A009;
+  cursor: pointer;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+}
+
+.logTitle:focus {
+  background: #895F06;
+}
+
+.entryCol {
+  border-radius: 0 30px 30px 0;
+  padding: 10px 40px 10px 30px; 
+  background: #fff9f5;
+  height: 65vh;
+  overflow: auto;
+}
+
+.logEntry {
+  color: rgba(0, 0, 0, .9);
+}
+
+.logPara {
+  font-size: 0.8em;
+  padding: 6px, 0, 6px, 0;
+}
+
+h3 {
+  font-size: 2em; 
+  margin-bottom: 4px; }
+
+h4 {
+  font-size: 3em; 
+  margin-bottom: 28px;
+  margin-top: 0px; 
+}
+
+h5 {
+  font-size: .8em !important; 
+}
+
+.meta > .webText {
+  font-size: 0.7em;
+  line-height: 1;
+  display: block;
+}
+
+.logCol::-webkit-scrollbar {
+  width: 8px;
+}
+
+.logCol::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+.logCol::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(223, 223, 223, 0.158);
+}

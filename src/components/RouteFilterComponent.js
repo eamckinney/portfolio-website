@@ -59,7 +59,7 @@ let routes = routesData;
 
 // this function isn't used right now, but this is how to use fetch to grab JSON data from an API.
 // I think the loading would take too long to scrape each page individually (to add the description).
-function fetchData() {
+/*function fetchData() {
 	fetch(
 		"https://www.mountainproject.com/data/get-routes-for-lat-lon?lat=44.98&lon=-93.27&maxDistance=100&maxResults=500&key=108609186-edcbf717f0fe202f4e7f1d37202161d5"
 	)
@@ -69,7 +69,7 @@ function fetchData() {
 		.then((data) => {
 			console.log(data);
 		});
-}
+}*/
 
 function compareValues(key) {
 	return function innerSort(a, b) {
@@ -139,7 +139,7 @@ class RouteFilter extends Component {
     }
     
     componentDidMount() {
-        fetchData();
+        //fetchData();
     }
 
 	handleChange = (e, { name, value }) => this.setState({ [name]: value });

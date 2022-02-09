@@ -37,7 +37,7 @@ class RenderProject extends Component {
                             {skills}
                         </div>
                         {this.props.project.description}
-                        <Button className="btn-outline-light" onClick={this.toggleModal}>See More</Button>
+                        <Button className="btn-outline-light" onClick={this.toggleModal}>See more.</Button>
                     </CardBody>
                 </Card>
 
@@ -104,30 +104,54 @@ class Projects extends Component {
                     <div class="row">
                         <div class="col second-block px-5">
                             <div class="row" id="Projects">
-                                <div class="col-md-5 mx-4 order-md-last">
-                                    <div class="mt-5 align-items-center">
-                                        <h1 class="text-left" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
-                                        <p class="text-left" data-aos="fade-up" data-aos-duration="1000">
-                                            Here are a couple of projects I'm working on. 
-                                            I've been feeding my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
-                                            dabbling with d3.js to play with data visualizations, 
-                                            working at a gender research startup to build an app to help with international development projects,
-                                            and trying to save my houseplants from myself. <br/><br/>
-                                            Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
-                                        </p>
+                                <div class="col">
+                                    <div className="row">
+                                        <div class="col-md-5 mx-4 order-md-last">
+                                        </div>
+                                        <div class="col-md-6"> 
+                                            <div key='hundredDays' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                                <Link to="/100daysofcode">
+                                                    <Card className={`project-box hundred`}>
+                                                        <CardBody>
+                                                            <CardTitle>100 Days of Code</CardTitle>
+                                                            On February 3, 2022, I began a #100DaysOfCode challenge.
+                                                            <Link to="/100daysofcode"><Button className="btn-outline-light ml-3">Check out my logbook.</Button></Link>
+                                                        </CardBody>
+                                                    </Card>
+                                                </Link>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">                                
                                     <div class="row">
-                                        {projectsLeftCol}
+                                        <div class="col-md-5 mx-4 order-md-last">
+                                            <div class="mt-5 align-items-center">
+                                                <h1 class="text-left" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+                                                <p class="text-left" data-aos="fade-up" data-aos-duration="1000">
+                                                    Here are a couple of projects I'm working on. 
+                                                    I've been feeding my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
+                                                    dabbling with d3.js to play with data visualizations, 
+                                                    working at a gender research startup to build an app to help with international development projects,
+                                                    and trying to save my houseplants from myself. <br/><br/>
+                                                    Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">                                
+                                            <div class="row">
+                                                {projectsLeftCol}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">                                
+                                            <div class="row">
+                                                {projectsRightCol}
+                                            </div>
+                                        </div>
                                     </div>
+                                    
                                 </div>
-                                <div class="col-md-3">                                
-                                    <div class="row">
-                                        {projectsRightCol}
-                                    </div>
-                                </div>
+                                
                             </div>
+                            
                             <div className="row">
                                 <div className="col first-block-scroll">
                                     <div className="text-center mx-auto mb-5" id="scroll-about">

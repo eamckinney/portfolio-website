@@ -13,7 +13,7 @@ body {
 
 
 
-h1, h2, h3, .card-title, button, .modal-title {
+h1, h2, h3, h4, .card-title, button, .modal-title {
   font-family: "Lora", serif; }
 
 h1 {
@@ -207,6 +207,8 @@ a.skills {
     background-color: #81B29A; }
   .project3 {
     background-color: #7F8FA3; }
+  .hundred {
+    background-color: rgba(0, 0, 0, .7) }
 
 .wide-modal {
   width: 1000px;

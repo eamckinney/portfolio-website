@@ -6,6 +6,7 @@ import About from './AboutComponent';
 import Projects from './ProjectsComponent';
 import Connect from './ConnectComponent';
 import RouteFilter from './RouteFilterComponent.js';
+import HundredDays from './HundredDaysComponent.js';
 
 
 class Main extends Component {
@@ -23,6 +24,7 @@ class Main extends Component {
                         </React.Fragment>
                     } />
                     <Route path='/betaforbeta' component={RouteFilter} />
+                    <Route path='/100daysofcode' component={HundredDays} />
                     <Redirect to='/home' />
                 </Switch>
             </div>
