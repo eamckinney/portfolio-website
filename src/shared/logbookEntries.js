@@ -40,4 +40,14 @@ export const ENTRIES = [
       "https://stackoverflow.com/questions/27069142/change-div-background-color-on-click-using-only-css",
       "https://stackoverflow.com/questions/12485074/html-link-with-href-that-refers-to-text"]
   },
+  {
+    id: 3,
+    day: "Day 4",
+    title: "Bloom Boom design",
+    date: "Tuesday, February 8, 2022",
+    tools: "Design, Wix",
+    url: "None",
+    learned: "Helped a landscape architect friend visualize what a website could look like for a potential new business venture. Hoping to help them create the website when they are ready to take that step forward.",
+    resources: ["None"]
+  },
 ];
