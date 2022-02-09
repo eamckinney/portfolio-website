@@ -33,7 +33,7 @@ export default function HundredDays() {
     
     const resources = entry.resources.map(resource => {
       return(
-        <li><a href={resource} target="_blank">{resource}</a></li>
+        resource.str == 'None' ? <li><a href={resource} target="_blank">{resource}</a></li> : <li>{resource}</li>
       );
     });
 
@@ -43,9 +43,12 @@ export default function HundredDays() {
           <span style={{"letterSpacing": "3px", "fontFamily":"Avenir", "fontSize":".8em"}}>{entry.day.toUpperCase()}</span>
           <h4> {entry.title} </h4>
           <p className="logPara">
-            <span><b>Date:</b> {entry.date}</span><br/>
-            <span><b>Language/Tools:</b> {entry.tools} </span><br/>
-            <span><b>URL:</b> <a href={entry.url} target="_blank">{entry.url}</a></span><br/>
+            <span><b>Date: </b>{entry.date}</span><br/>
+            <span><b>Language/Tools: </b>{entry.tools}</span><br/>
+            <span><b>URL: </b> 
+              { entry.url.str == 'None' ? <a href={entry.url} target="_blank">{entry.url}</a> : entry.url }
+            </span><br/>
+              
           </p>
           <p className="logPara">
             <b>What I did / what I learned: </b>
