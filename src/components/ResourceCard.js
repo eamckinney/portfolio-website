@@ -1,16 +1,27 @@
 import React, { useState, useEffect } from "react";
-import { Card, Header, Image } from 'semantic-ui-react';
+import { Card, Header } from 'semantic-ui-react';
+import axios from 'axios'
 import "../App.css";
 import "../HundredDays.css";
 
 export default function ResourceCard(props) {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [response, setResponse] = useState(null);
   const [data, setData] = useState(null);
-
-  const encodedURL = props.url.replaceAll(":","%3A").replaceAll("/","%2F").replaceAll("#","%23");
+  
+  
+  let encodedURL = props.url.replaceAll(":","%3A").replaceAll("/","%2F").replaceAll("#","%23");
   console.log(encodedURL);
+
+  const fetch = async() => {
+    const res = await axios.get("https://opengraph.io/api/1.1/site/" + encodedURL + "?accept_lang=auto&app_id=fe52a1e0-c902-4b6b-8ee0-92576c376573")
+    console.log("res", res)
+    setIsLoaded(true);
+    setData(res.data.hybridGraph);
+  }
+
+  //fetch();
+
   // Note: the empty deps array [] means
   // this useEffect will run once
   // similar to componentDidMount()
@@ -20,7 +31,6 @@ export default function ResourceCard(props) {
       .then(
         (res) => {
           setIsLoaded(true);
-          setResponse(res);
           setData(res.hybridGraph);
         },
         // Note: it's important to handle errors here
@@ -38,7 +48,6 @@ export default function ResourceCard(props) {
   } else if (!isLoaded) {
     return <div>Loading...</div>;
   } else {
-    console.log(response);
     console.log(data);
 
     const host = data ? new URL(data.url).hostname : "" ;
@@ -64,7 +73,7 @@ export default function ResourceCard(props) {
             </Card.Meta>
             </a>
           </Card.Content>
-        ) : "Still loading!" }
+        ) : "" }
       </Card>
       
     );

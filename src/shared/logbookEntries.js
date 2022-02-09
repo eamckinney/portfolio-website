@@ -57,12 +57,13 @@ export const ENTRIES = [
     date: "Wednesday, February 9, 2022",
     tools: "JavaScript, React.js",
     url: "emilyamckinney.com/100daysofcode",
-    learned: "Learned about using ternary operators within JSX to display elements based on a condition.",
+    learned: "Learned about using ternary operators within JSX to display elements based on a condition. Started converting the resource list to cards, using OpenGraph.io to scrape the open graph data from resources, but am running into issues with fetching. When I use useEffect(), new resources won't load / get fetched when I move to a new log. When I fetch OUTSIDE of useEffect(), there is nonstop requests to the API. Have to figure out how to correctly trigger fetching. Commented out on GitHub for now.",
     resources: ["https://stackoverflow.com/questions/44046037/if-else-statement-inside-jsx-reactjs",
       "https://reactjs.org/docs/faq-ajax.html",
       "https://www.opengraph.io/documentation/",
       "https://dev.to/ilonacodes/frontend-shorts-how-to-create-link-content-previewer-with-react-vue-and-vanilla-javascript-1pm1",
       "https://react.semantic-ui.com/views/card/#types-card",
-    "https://stackoverflow.com/questions/1368264/how-to-extract-the-hostname-portion-of-a-url-in-javascript"]
+      "https://stackoverflow.com/questions/1368264/how-to-extract-the-hostname-portion-of-a-url-in-javascript",
+      "https://stackoverflow.com/questions/64648118/react-fetch-data-on-button-click"]
   },
 ];

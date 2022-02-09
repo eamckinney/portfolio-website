@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Card, Divider, Grid } from "semantic-ui-react";
 import { ENTRIES } from '../shared/logbookEntries';
 import { Link } from "react-router-dom";
@@ -12,14 +12,32 @@ export default function HundredDays() {
 
   const[entries]=useState(ENTRIES);  
   const[selectedEntry, setSelectedEntry]=useState([entries[entries.length-1]]);
+  const[resources, setResources]=useState(selectedEntry[0].resources);
 
   // Sort so that most recent is first
   entries.sort((a, b) => (a.id < b.id) ? 1 : -1);
 
+  useEffect(() => {
+    setSelectedEntry(selectedEntry);
+  }, selectedEntry);
+  
+  useEffect(() => {
+    setResources(resources);
+  }, resources);
+
+  function clicked(entry) {
+    setSelectedEntry([entry]);
+    setResources(entry.resources);
+    console.log(resources);
+
+    
+
+  }
+
   const entryTitles = entries.map(entry => {
     return(
       <div>
-        <div className="row" onClick={() => setSelectedEntry([entry])}>
+        <div className="row" onClick={() => clicked(entry)}>
           <div className="col text-right logTitle" tabIndex={entry.id}>
             <h3> { entry.day } </h3>
             <p><i> { entry.title } </i></p>
@@ -31,12 +49,13 @@ export default function HundredDays() {
   });
 
   const entryText = selectedEntry.map(entry => {
-
-    const resourceCards = entry.resources.map(resource => {
+    
+    const resourceCards = resources.map(resource => {
       return(
-        resource.str != 'None' ? (
+        /*resource.str != 'None' ? (
           <ResourceCard url={resource} />
-        ) : {resource}
+        ) : <span>None</span>*/
+        resource.str == 'None' ? <li><a href={resource} target="_blank">{resource}</a></li> : <li>{resource}</li>
       );
     });
 
@@ -57,14 +76,18 @@ export default function HundredDays() {
             <b>What I did / what I learned: </b>
             {entry.learned}
           </p>
-          <p className="logPara">
+          <span className="logPara">
             <b>Additional resources used: </b>
-          </p>
-          <Grid.Row stretched>
-            <Card.Group itemsPerRow={5}>
+            <ul style={{"lineHeight": "1.3"}}>
               {resourceCards}
+            </ul>
+          </span>
+          
+          {/*<Grid.Row stretched>
+            <Card.Group itemsPerRow={5}>
+              
             </Card.Group>
-          </Grid.Row>
+          </Grid.Row>*/}
           
           
           
@@ -72,6 +95,8 @@ export default function HundredDays() {
       </div>
     );
   })
+
+  
 
   return(
 
