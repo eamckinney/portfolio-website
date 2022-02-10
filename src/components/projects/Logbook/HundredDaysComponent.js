@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Card, Divider, Grid } from "semantic-ui-react";
-import { ENTRIES } from '../../shared/logbookEntries';
+import { Card, Divider } from "semantic-ui-react";
+import { ENTRIES } from '../../../shared/logbookEntries';
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
-import "../App.css";
-import "../HundredDays.css";
+import "../../../App.css";
+import "../../../HundredDays.css";
 import ResourceCard from "./ResourceCard.js";
 
 

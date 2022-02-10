@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Card, Header } from 'semantic-ui-react';
 import axios from 'axios'
-import "../App.css";
-import "../HundredDays.css";
+import "../../../App.css";
+import "../../../HundredDays.css";
 
 export default function ResourceCard(props) {
   const [error, setError] = useState(null);

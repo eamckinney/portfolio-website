@@ -5,8 +5,8 @@ import Home from './homepage/HomeComponent';
 import About from './homepage/AboutComponent';
 import Projects from './homepage/ProjectsComponent';
 import Connect from './homepage/ConnectComponent';
-import RouteFilter from './projects/RouteFilterComponent.js';
-import HundredDays from './projects/HundredDaysComponent.js';
+import RouteFilter from './projects/RouteFilter/RouteFilterComponent.js';
+import HundredDays from './projects/Logbook/HundredDaysComponent.js';
 
 
 class Main extends Component {
