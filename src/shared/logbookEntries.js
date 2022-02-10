@@ -43,7 +43,7 @@ export const ENTRIES = [
   {
     id: 3,
     day: "Day 4",
-    title: "Bloom Boom design",
+    title: "Bloom Boom Design",
     date: "Tuesday, February 8, 2022",
     tools: "Design, Wix",
     url: "None",
@@ -69,11 +69,11 @@ export const ENTRIES = [
   {
     id: 5,
     day: "Day 6",
-    title: "asdf",
+    title: "Fixed CSS Bugs, Pushed Logbook Live",
     date: "Thursday, February 10, 2022",
     tools: "JavaScript, React.js",
     url: "emilyamckinney.com/100daysofcode",
-    learned: "asdf",
+    learned: "Today I noticed some CSS styling that I had applied to my logbook had unintentional effects on my main portfolio page. Today, I fixed that, upgraded some libraries that had security issues, and pushed my logbook live!",
     resources: ["None"]
   },
 ];
