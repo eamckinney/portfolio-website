@@ -51,11 +51,12 @@ export default function HundredDays() {
   const entryText = selectedEntry.map(entry => {
     
     const resourceCards = resources.map(resource => {
+      console.log(resource);
       return(
         /*resource.str != 'None' ? (
           <ResourceCard url={resource} />
         ) : <span>None</span>*/
-        resource.str == 'None' ? <li><a href={resource} target="_blank">{resource}</a></li> : <li>{resource}</li>
+        resource != 'None' ?  <li><a href={resource} target="_blank">{resource}</a></li> : <li>{resource}</li> 
       );
     });
 
@@ -68,7 +69,7 @@ export default function HundredDays() {
             <span><b>Date: </b>{entry.date}</span><br/>
             <span><b>Language/Tools: </b>{entry.tools}</span><br/>
             <span><b>URL: </b> 
-              { entry.url.str == 'None' ? <a href={entry.url} target="_blank">{entry.url}</a> : entry.url }
+              { entry.url != 'None' ? <a href={entry.url} target="_blank">{entry.url}</a> : entry.url }
             </span><br/>
               
           </p>
