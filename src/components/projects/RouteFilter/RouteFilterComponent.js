@@ -15,9 +15,9 @@ import { Form, Label, Divider, Rating, Header } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "semantic-ui-css/semantic.min.css";
-import "../App.css";
-import "../RouteFilter.css";
-import routesData from "../shared/all_routes_array_apr19.json";
+import "../../../App.css";
+import "../../../RouteFilter.css";
+import routesData from "../../../shared/all_routes_array_apr19.json";
 
 const routeOptions = [
 	{ key: "crimpy", text: "Crimpy", value: "crimpy" },

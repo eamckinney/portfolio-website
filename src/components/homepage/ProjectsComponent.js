@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Card, CardTitle, CardBody,
     Button, Modal, ModalHeader, ModalBody } from "reactstrap";
-import { PROJECTS } from '../shared/projects';
+import { PROJECTS } from '../../shared/projects';
 import { Link } from "react-router-dom";
-import "../App.css";
+import "../../App.css";
 
 
 class RenderProject extends Component {

@@ -10,7 +10,10 @@
     padding-top: 2%;
     padding-bottom: 5%;
     background: #fff9f5;
+    
 }
+.ui.form input[type=text] {
+    font-family: "Lora", serif; }
 
 .appTitle {
     color: #3D405B;

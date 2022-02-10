@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
-import Navigation from './NavComponent';
-import Home from './HomeComponent';
-import About from './AboutComponent';
-import Projects from './ProjectsComponent';
-import Connect from './ConnectComponent';
-import RouteFilter from './RouteFilterComponent.js';
-import HundredDays from './HundredDaysComponent.js';
+import Navigation from './homepage/NavComponent';
+import Home from './homepage/HomeComponent';
+import About from './homepage/AboutComponent';
+import Projects from './homepage/ProjectsComponent';
+import Connect from './homepage/ConnectComponent';
+import RouteFilter from './projects/RouteFilterComponent.js';
+import HundredDays from './projects/HundredDaysComponent.js';
 
 
 class Main extends Component {

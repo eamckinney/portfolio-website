@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, Divider, Grid } from "semantic-ui-react";
-import { ENTRIES } from '../shared/logbookEntries';
+import { ENTRIES } from '../../shared/logbookEntries';
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "../App.css";
@@ -105,8 +105,8 @@ export default function HundredDays() {
 				<div className="container mb-5 pl-0 text-center">
 					<div className="row">
 						<div className="col">
-							<h2 className="appTitle mb-0">Logbook</h2>
-							<h3 className="appTitle mt-0 mb-3">
+							<h2 className="logbookTitle mb-0">Logbook</h2>
+							<h3 className="logbookTitle mt-0 mb-3">
 								100 Days of Code
 							</h3>
 						</div>
@@ -121,7 +121,7 @@ export default function HundredDays() {
 				</div>
 
 
-        <div className="container appStyle">
+        <div className="container logbookStyle">
 					<div className="row">
             
             <div className="col-md-4 logCol">
