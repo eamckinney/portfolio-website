@@ -53,7 +53,7 @@ export const ENTRIES = [
   {
     id: 4,
     day: "Day 5",
-    title: "Logbook improvements",
+    title: "Fetching Open Graph Data",
     date: "Wednesday, February 9, 2022",
     tools: "JavaScript, React.js",
     url: "emilyamckinney.com/100daysofcode",
@@ -65,5 +65,15 @@ export const ENTRIES = [
       "https://react.semantic-ui.com/views/card/#types-card",
       "https://stackoverflow.com/questions/1368264/how-to-extract-the-hostname-portion-of-a-url-in-javascript",
       "https://stackoverflow.com/questions/64648118/react-fetch-data-on-button-click"]
+  },
+  {
+    id: 5,
+    day: "Day 6",
+    title: "asdf",
+    date: "Thursday, February 10, 2022",
+    tools: "JavaScript, React.js",
+    url: "emilyamckinney.com/100daysofcode",
+    learned: "asdf",
+    resources: ["None"]
   },
 ];
