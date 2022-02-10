@@ -112,11 +112,15 @@ export default function HundredDays() {
 						</div>
 					</div>
 					<div className="row">
-						<div className="col">
+          
+            <div className="col">
 							<Link to="/home" className="text-center">
-								<Button className="btn-outline-dark" style={{"fontSize": ".8em"}}>Back to Home</Button>
+								<Button className="btn-outline-dark mr-2" style={{"fontSize": ".8em"}}>Back to Home</Button>
 							</Link>
+              <a className="btn btn-social-icon btn-github ml-2" href="https://github.com/eamckinney/portfolio-website/tree/master/src/components/projects/Logbook" target="_blank" rel="noopener noreferrer"><i className="fa fa-lg fa-social fa-github"></i></a>
 						</div>
+
+
 					</div>
 				</div>
 
