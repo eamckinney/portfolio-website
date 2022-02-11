@@ -83,7 +83,9 @@ export const ENTRIES = [
     date: "Friday, February 11, 2022",
     tools: "JavaScript, Node.js, Express",
     url: "https://github.com/eamckinney/og-scraper-app",
-    learned: "Today I attempted to create my own Open Graph Data scraper app using an online tutorial because the API I had originally planned to use has a free limit of 100 requests per month.. Unfortunately, after following all instructions, my app produced an error I was unable to debug (after several hours). Sometimes you win, sometimes you lose.",
-    resources: ["https://www.youtube.com/watch?v=7MAdlGPMPEc"]
+    learned: "Today I attempted to create my own Open Graph Data scraper app using an online tutorial because the API I had originally planned to use has a free limit of 100 requests per month.. Unfortunately, after following all instructions, my app produced an error I was unable to debug (after several hours). Sometimes you win, sometimes you lose. Additionally, I spent some time this morning reading about Web3, the Blockchain, and NFTs. Do I still think that crypto is astrology for bros? Yes, yes I do.",
+    resources: ["https://www.youtube.com/watch?v=7MAdlGPMPEc",
+      "https://www.wired.com/story/web3-gavin-wood-interview/",
+      "https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"]
   },
 ];
