@@ -76,4 +76,14 @@ export const ENTRIES = [
     learned: "Today I noticed some CSS styling that I had applied to my logbook had unintentional effects on my main portfolio page. Today, I fixed that, upgraded some libraries that had security issues, and pushed my logbook live!",
     resources: ["None"]
   },
+  {
+    id: 6,
+    day: "Day 7",
+    title: "Attempted OG Data App",
+    date: "Friday, February 11, 2022",
+    tools: "JavaScript, Node.js, Express",
+    url: "https://github.com/eamckinney/og-scraper-app",
+    learned: "Today I attempted to create my own Open Graph Data scraper app using an online tutorial because the API I had originally planned to use has a free limit of 100 requests per month.. Unfortunately, after following all instructions, my app produced an error I was unable to debug (after several hours). Sometimes you win, sometimes you lose.",
+    resources: ["https://www.youtube.com/watch?v=7MAdlGPMPEc"]
+  },
 ];
