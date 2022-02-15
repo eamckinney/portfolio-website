@@ -57,18 +57,21 @@ export default function HundredDays() {
         /*resource.str != 'None' ? (
           <ResourceCard url={resource} />
         ) : <span>None</span>*/
-        /*resource != 'None' ?  <li><a href={resource} target="_blank">{resource}</a></li> : <li>{resource}</li> */
-        <Card>       
-          <Card.Content>
-            <a href={resource} target="_blank">
-            <Header as='h5'>{host}</Header>
-            <Card.Meta>
-              <span className="webText">{resource}</span>
-            </Card.Meta>
-            </a>
-          </Card.Content>
-        
-      </Card>
+        resource != 'None' ?  
+          <Card>       
+            <Card.Content>
+              <a href={resource} target="_blank">
+              <Header as='h5'>{host}</Header>
+              <Card.Meta>
+                <span className="webText">{resource}</span>
+              </Card.Meta>
+              </a>
+            </Card.Content>
+          </Card>
+        : <ul className="logPara">
+            <li>{resource}</li> 
+          </ul>
+          
 
       );
     });
