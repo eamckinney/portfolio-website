@@ -88,4 +88,15 @@ export const ENTRIES = [
       "https://www.wired.com/story/web3-gavin-wood-interview/",
       "https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"]
   },
+  {
+    id: 7,
+    day: "Day 8",
+    title: "Updated Resource Cards",
+    date: "Tuesday, February 15, 2022",
+    tools: "JavaScript, React",
+    url: "emilyamckinney.com/100daysofcode",
+    learned: "Don't let perfect be the enemy of good. There's a saying that goes something like that, right? First off, I didn't get to code yesterday. But I'm back at it today. Second, after too many days spent on those dang resource cards, today I made simple cards using Url.hostname, and will save Open Graph Data scraping for another day when the frustrations of last week are a little farther away. Also was having trouble loading the resource card as a separate component in a different file (and having it update when going from entry to entry), so I put it back into the main Logbook component. Baby steps! Tomorrow I hope to work on something a bit different.",
+    resources: ["https://react.semantic-ui.com/collections/grid/#content-columns",
+      "https://developer.mozilla.org/en-US/docs/Web/API/URL/URL"]
+  },
 ];
