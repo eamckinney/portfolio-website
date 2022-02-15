@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, Divider } from "semantic-ui-react";
+import { Card, Divider, Header, Grid } from "semantic-ui-react";
 import { ENTRIES } from '../../../shared/logbookEntries';
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
@@ -52,11 +52,24 @@ export default function HundredDays() {
     
     const resourceCards = resources.map(resource => {
       console.log(resource);
+      let host = resource != 'None' ? new URL(resource).hostname : "" ;
       return(
         /*resource.str != 'None' ? (
           <ResourceCard url={resource} />
         ) : <span>None</span>*/
-        resource != 'None' ?  <li><a href={resource} target="_blank">{resource}</a></li> : <li>{resource}</li> 
+        /*resource != 'None' ?  <li><a href={resource} target="_blank">{resource}</a></li> : <li>{resource}</li> */
+        <Card>       
+          <Card.Content>
+            <a href={resource} target="_blank">
+            <Header as='h5'>{host}</Header>
+            <Card.Meta>
+              <span className="webText">{resource}</span>
+            </Card.Meta>
+            </a>
+          </Card.Content>
+        
+      </Card>
+
       );
     });
 
@@ -79,16 +92,16 @@ export default function HundredDays() {
           </p>
           <span className="logPara">
             <b>Additional resources used: </b>
-            <ul style={{"lineHeight": "1.3"}}>
+            {/*<ul style={{"lineHeight": "1.3"}}>
               {resourceCards}
-            </ul>
+              </ul>*/}
           </span>
           
-          {/*<Grid.Row stretched>
-            <Card.Group itemsPerRow={5}>
-              
+          <Grid.Row stretched padded className="pl-3 pr-3 mt-2">
+            <Card.Group itemsPerRow={3}>
+              {resourceCards}
             </Card.Group>
-          </Grid.Row>*/}
+          </Grid.Row>
           
           
           
