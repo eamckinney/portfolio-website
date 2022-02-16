@@ -99,4 +99,15 @@ export const ENTRIES = [
     resources: ["https://react.semantic-ui.com/collections/grid/#content-columns",
       "https://developer.mozilla.org/en-US/docs/Web/API/URL/URL"]
   },
+  {
+    id: 8,
+    day: "Day 9",
+    title: "CodeSignal Challenges",
+    date: "Wednesday, February 16, 2022",
+    tools: "JavaScript",
+    url: "https://app.codesignal.com/arcade/code-arcade",
+    learned: "Today I took a break from classic web development and played some nice code games. CodeSignal has quite an easy ramp-up (much easier than Leetcode), but it was nice to get through a handful of challenges quickly. Math.trunc() was a helpful tool today.",
+    resources: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"]
+  },
 ];
