@@ -110,4 +110,14 @@ export const ENTRIES = [
     resources: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc",
       "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"]
   },
+  {
+    id: 9,
+    day: "Day 1",
+    title: "CodeSignal Challenges (Again)",
+    date: "Thursday, February 17, 2022",
+    tools: "JavaScript",
+    url: "https://github.com/eamckinney/coding-challenges",
+    learned: "Did another CodeSignal challenge, and created a github repo to track the coding challenges I complete.",
+    resources: ["None"]
+  },
 ];
