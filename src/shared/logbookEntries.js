@@ -123,11 +123,11 @@ export const ENTRIES = [
   {
     id: 10,
     day: "Day 11",
-    title: "asdf",
+    title: "Logbook Search Field",
     date: "Friday, February 18, 2022",
     tools: "JavaScript",
-    url: "https://github.com/eamckinney/coding-challenges",
-    learned: "Today, I added the day number that I'm on to my Projects page (emilyamckinney.com) using the length of this logbook. ",
-    resources: ["None"]
+    url: "emilyamckinney.com/100daysofcode",
+    learned: "Today, I added the day number that I'm on to my Projects page (emilyamckinney.com) using the length of this logbook. Additionally, I added a little search bar! It queries the title, what I learned, date, tools, and resources used. Neat! I had previously implemented a search feature for BetaForBeta (https://emilyamckinney.com/betaforbeta), but to implement it here I had to convert it from using class components to React Hooks. Another good task to increase my familiarity with hooks.",
+    resources: ["https://stackoverflow.com/questions/67882590/how-to-implement-addadiditions-in-react-sematic-ui-using-hooks"]
   },
 ];
