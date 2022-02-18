@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Card, CardTitle, CardBody,
     Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import { PROJECTS } from '../../shared/projects';
+import { ENTRIES } from '../../shared/logbookEntries';
 import { Link } from "react-router-dom";
 import "../../App.css";
 
@@ -68,6 +69,7 @@ class Projects extends Component {
         super(props);
         this.state = {
             projects: PROJECTS,
+            entries: ENTRIES,
             isModalOpen: false,
             isRooOpen: false
         };
@@ -98,6 +100,8 @@ class Projects extends Component {
             );
         });
 
+        const logbookDays = this.state.entries.length;
+
         return(
             <React.Fragment>
                 <div class="container-fluid">
@@ -114,7 +118,7 @@ class Projects extends Component {
                                                     <Card className={`project-box hundred`}>
                                                         <CardBody>
                                                             <CardTitle>100 Days of Code</CardTitle>
-                                                            On February 3, 2022, I began a #100DaysOfCode challenge.
+                                                            On February 3, 2022, I began my #100DaysOfCode. I'm on <b>Day {logbookDays}</b>!
                                                             <Link to="/100daysofcode"><Button className="btn-outline-light ml-3">Check out my logbook.</Button></Link>
                                                         </CardBody>
                                                     </Card>
@@ -132,7 +136,7 @@ class Projects extends Component {
                                                     dabbled with d3.js to play with data visualizations, 
                                                     worked at a gender research startup to build an app to help with international development projects,
                                                     and am trying to save my houseplants from myself. <br/><br/>
-                                                    Recently, I have started a #100DaysOfCode challenge! See what I'm learning by taking a look at <Link to="/100daysofcode">my logbook.</Link><br/><br/>
+                                                    Recently, I have started a #100DaysOfCode challenge! I'm on <b>Day {logbookDays}</b>. See what I'm learning by taking a look at <Link to="/100daysofcode">my logbook.</Link><br/><br/>
                                                     Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
                                                 </p>
                                             </div>

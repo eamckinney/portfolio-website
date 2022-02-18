@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "../../../App.css";
 import "../../../HundredDays.css";
-import ResourceCard from "./ResourceCard.js";
 
 
 export default function HundredDays() {
