@@ -112,7 +112,7 @@ export const ENTRIES = [
   },
   {
     id: 9,
-    day: "Day 1",
+    day: "Day 10",
     title: "CodeSignal Challenges (Again)",
     date: "Thursday, February 17, 2022",
     tools: "JavaScript",
