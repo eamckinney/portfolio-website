@@ -9,14 +9,15 @@ import "../../../HundredDays.css";
 
 export default function HundredDays() {
 
-  const[entries]=useState(ENTRIES);  
-  const[selectedEntry, setSelectedEntry]=useState([entries[entries.length-1]]);
-  const[resources, setResources]=useState(selectedEntry[0].resources);
+  const[entries]=useState(ENTRIES);
   const[filteredEntries, setFilteredEntries] = useState(ENTRIES);
+  const[selectedEntry, setSelectedEntry]=useState([filteredEntries[ENTRIES.length-1]]);
+  const[resources, setResources]=useState(selectedEntry[0].resources);
   const[searchTerm, setSearchTerm] = useState("");
 
   // Sort so that most recent is first
   entries.sort((a, b) => (a.id < b.id) ? 1 : -1);
+  filteredEntries.sort((a, b) => (a.id < b.id) ? 1 : -1);
 
   useEffect(() => {
     setSelectedEntry(selectedEntry);
@@ -31,7 +32,6 @@ export default function HundredDays() {
   }, filteredEntries);
 
   
-
   function clicked(entry) {
     setSelectedEntry([entry]);
     setResources(entry.resources);
