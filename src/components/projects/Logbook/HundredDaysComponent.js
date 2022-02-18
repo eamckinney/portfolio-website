@@ -44,7 +44,10 @@ export default function HundredDays() {
 		if (value.length > 0) {
 			localEntries = localEntries.filter((obj) =>
         obj.title.toLowerCase().includes(value.toLowerCase()) |
-        obj.learned.toLowerCase().includes(value.toLowerCase())
+        obj.learned.toLowerCase().includes(value.toLowerCase()) |
+        obj.date.toLowerCase().includes(value.toLowerCase()) |
+        obj.tools.toLowerCase().includes(value.toLowerCase()) |
+        (obj.resources.filter((re) => re.includes(value.toLowerCase())).length >= 1)
       );
 		} else {
       localEntries = entries;
