@@ -127,11 +127,12 @@ class Projects extends Component {
                                             <div class="mt-5 align-items-center">
                                                 <h1 class="text-left" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
                                                 <p class="text-left" data-aos="fade-up" data-aos-duration="1000">
-                                                    Here are a couple of projects I'm working on. 
-                                                    I've been feeding my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
-                                                    dabbling with d3.js to play with data visualizations, 
-                                                    working at a gender research startup to build an app to help with international development projects,
-                                                    and trying to save my houseplants from myself. <br/><br/>
+                                                    Here are a couple of projects I've worked on. 
+                                                    I fed my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
+                                                    dabbled with d3.js to play with data visualizations, 
+                                                    worked at a gender research startup to build an app to help with international development projects,
+                                                    and am trying to save my houseplants from myself. <br/><br/>
+                                                    Recently, I have started a #100DaysOfCode challenge! See what I'm learning by taking a look at <Link to="/100daysofcode">my logbook.</Link><br/><br/>
                                                     Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
                                                 </p>
                                             </div>
