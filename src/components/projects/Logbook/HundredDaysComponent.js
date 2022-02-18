@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, Divider, Header, Grid } from "semantic-ui-react";
+import { Card, Divider, Header, Grid, Form } from "semantic-ui-react";
 import { ENTRIES } from '../../../shared/logbookEntries';
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
@@ -12,6 +12,8 @@ export default function HundredDays() {
   const[entries]=useState(ENTRIES);  
   const[selectedEntry, setSelectedEntry]=useState([entries[entries.length-1]]);
   const[resources, setResources]=useState(selectedEntry[0].resources);
+  const[filteredEntries, setFilteredEntries] = useState(ENTRIES);
+  const[searchTerm, setSearchTerm] = useState("");
 
   // Sort so that most recent is first
   entries.sort((a, b) => (a.id < b.id) ? 1 : -1);
@@ -24,16 +26,35 @@ export default function HundredDays() {
     setResources(resources);
   }, resources);
 
+  useEffect(() => {
+    setFilteredEntries(filteredEntries);
+  }, filteredEntries);
+
+  
+
   function clicked(entry) {
     setSelectedEntry([entry]);
     setResources(entry.resources);
-    console.log(resources);
+  };
 
-    
+  const handleChange = (e, { value }) => {
+    setSearchTerm(value);
+    let localEntries = entries;
+
+		if (value.length > 0) {
+			localEntries = localEntries.filter((obj) =>
+        obj.title.toLowerCase().includes(value.toLowerCase()) |
+        obj.learned.toLowerCase().includes(value.toLowerCase())
+      );
+		} else {
+      localEntries = entries;
+    }
+
+    setFilteredEntries(localEntries);
 
   }
 
-  const entryTitles = entries.map(entry => {
+  const entryTitles = filteredEntries.map(entry => {
     return(
       <div>
         <div className="row" onClick={() => clicked(entry)}>
@@ -117,7 +138,7 @@ export default function HundredDays() {
   return(
 
     <div className="hundredDaysPage" id="Top">
-				<div className="container mb-5 pl-0 text-center">
+				<div className="container mb-4 pl-0 text-center">
 					<div className="row">
 						<div className="col">
 							<h2 className="logbookTitle mb-0">Logbook</h2>
@@ -138,6 +159,23 @@ export default function HundredDays() {
 
 					</div>
 				</div>
+
+        <div className="container">
+          <div className="row">
+            <div className="col mb-3 ml-2">
+              <Form>
+                <Form.Input
+									width={5}
+									icon="search"
+									placeholder="Search the logbook..."
+									name="search"
+									value={searchTerm}
+									onChange={handleChange}
+								/>
+              </Form>
+            </div>
+          </div>
+        </div>
 
 
         <div className="container logbookStyle">

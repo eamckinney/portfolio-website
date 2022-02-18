@@ -120,4 +120,14 @@ export const ENTRIES = [
     learned: "Did another CodeSignal challenge, and created a github repo to track the coding challenges I complete.",
     resources: ["None"]
   },
+  {
+    id: 10,
+    day: "Day 11",
+    title: "asdf",
+    date: "Friday, February 18, 2022",
+    tools: "JavaScript",
+    url: "https://github.com/eamckinney/coding-challenges",
+    learned: "Today, I added the day number that I'm on to my Projects page (emilyamckinney.com) using the length of this logbook. ",
+    resources: ["None"]
+  },
 ];

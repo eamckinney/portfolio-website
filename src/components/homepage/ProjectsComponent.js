@@ -117,7 +117,7 @@ class Projects extends Component {
                                                 <Link to="/100daysofcode">
                                                     <Card className={`project-box hundred`}>
                                                         <CardBody>
-                                                            <CardTitle>100 Days of Code</CardTitle>
+                                                            <CardTitle>100 Days of Code Challenge</CardTitle>
                                                             On February 3, 2022, I began my #100DaysOfCode. I'm on <b>Day {logbookDays}</b>!
                                                             <Link to="/100daysofcode"><Button className="btn-outline-light ml-3">Check out my logbook.</Button></Link>
                                                         </CardBody>
