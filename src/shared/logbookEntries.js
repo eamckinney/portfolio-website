@@ -130,4 +130,16 @@ export const ENTRIES = [
     learned: "Today, I added the day number that I'm on to my Projects page (emilyamckinney.com) using the length of this logbook. Additionally, I added a little search bar! It queries the title, what I learned, date, tools, and resources used. Neat! I had previously implemented a search feature for BetaForBeta (https://emilyamckinney.com/betaforbeta), but to implement it here I had to convert it from using class components to React Hooks. Another good task to increase my familiarity with hooks.",
     resources: ["https://stackoverflow.com/questions/67882590/how-to-implement-addadiditions-in-react-sematic-ui-using-hooks"]
   },
+  {
+    id: 11,
+    day: "Day 12",
+    title: "CodeSignal",
+    date: "Tuesday, February 22, 2022",
+    tools: "JavaScript",
+    url: "https://github.com/eamckinney/coding-challenges",
+    learned: "More CodeSignal! I do love how it is very game-like. I'm hoping the challenges get a bit harder, but I'm trying to focus on how to solve the challenges most efficiently, and looking at other submissions to see if my solution could be improved. Today, there was an elegant solution using the && operator to return a value if a condition is met: maxW >= weight1 && value1 (if maxW being greater than weight1 is truthy, return value1). Also learned about Bitwise XOR operators... crazy how they work.",
+    resources: ["https://levelup.gitconnected.com/secrets-of-logical-%EF%B8%8F-operator-in-javascript-98efbae5e8aa",
+      "https://www.tutorialspoint.com/math-max-function-in-javascript",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR"]
+  },
 ];
