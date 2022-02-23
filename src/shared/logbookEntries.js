@@ -133,7 +133,7 @@ export const ENTRIES = [
   {
     id: 11,
     day: "Day 12",
-    title: "CodeSignal",
+    title: "Third day on CodeSignal",
     date: "Tuesday, February 22, 2022",
     tools: "JavaScript",
     url: "https://github.com/eamckinney/coding-challenges",
@@ -141,5 +141,19 @@ export const ENTRIES = [
     resources: ["https://levelup.gitconnected.com/secrets-of-logical-%EF%B8%8F-operator-in-javascript-98efbae5e8aa",
       "https://www.tutorialspoint.com/math-max-function-in-javascript",
       "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR"]
+  },
+  {
+    id: 12,
+    day: "Day 13",
+    title: "Day 4 on CodeSignal & Mongo",
+    date: "Wednesday, February 23, 2022",
+    tools: "JavaScript",
+    url: "https://github.com/eamckinney/coding-challenges",
+    learned: "Looking at another user's solution to a challenge I had already solved, I got to learn about '.some()' and remind myself about spread syntax. Additionally, I started setting up a MongoDB to eventually store these logbook entries (vs the simple javascript object that is storing them now)!",
+    resources: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some",
+      "https://betterprogramming.pub/javascript-ellipses-the-spread-and-rest-syntax-c12df294548d",
+      "https://www.freecodecamp.org/news/an-introduction-to-spread-syntax-in-javascript-fba39595922c/#:~:text=Spread%20syntax%20allows%20an%20iterable,for%20object%20literals)%20are%20expected.",
+      "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/",
+      "https://www.mongodb.com/languages/mern-stack-tutorial"]
   },
 ];
