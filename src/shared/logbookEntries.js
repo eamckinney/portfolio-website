@@ -156,4 +156,14 @@ export const ENTRIES = [
       "https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/",
       "https://www.mongodb.com/languages/mern-stack-tutorial"]
   },
+  {
+    id: 13,
+    day: "Day 14",
+    title: "Day 5 on CodeSignal",
+    date: "Friday, February 25, 2022",
+    tools: "JavaScript",
+    url: "https://github.com/eamckinney/coding-challenges",
+    learned: "Finished one of the code packs on CodeSignal today. They weren't my favorite challenges, so hoping the next pack gets more interesting!",
+    resources: ["None"]
+  },
 ];
