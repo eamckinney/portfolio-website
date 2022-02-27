@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, Divider, Header, Grid, Form } from "semantic-ui-react";
-import { ENTRIES } from '../../../shared/logbookEntries';
+import { ENTRIES } from '../../../shared/logbookEntryFrame';
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "../../../App.css";

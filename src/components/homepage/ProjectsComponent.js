@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import { Card, CardTitle, CardBody,
     Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 import { PROJECTS } from '../../shared/projects';
-import { ENTRIES } from '../../shared/logbookEntries';
 import { Link } from "react-router-dom";
 import "../../App.css";
 
@@ -21,6 +20,8 @@ class RenderProject extends Component {
         });
 	};
 
+    
+
     render() {
         
         const skills = this.props.project.skills.map(skill => {
@@ -28,6 +29,8 @@ class RenderProject extends Component {
                 <div key={skill} className="ui label tiny" style={{backgroundColor: "#fff9f5", color: this.props.project.color}}>{skill}</div>
             );
         });
+
+        
 
         return(
             <React.Fragment>
@@ -69,9 +72,9 @@ class Projects extends Component {
         super(props);
         this.state = {
             projects: PROJECTS,
-            entries: ENTRIES,
             isModalOpen: false,
-            isRooOpen: false
+            isRooOpen: false,
+            logbookDays: 0
         };
     }
 
@@ -81,6 +84,8 @@ class Projects extends Component {
         });
 
     };
+
+    
 
     render() {
 
@@ -100,7 +105,10 @@ class Projects extends Component {
             );
         });
 
-        const logbookDays = this.state.entries.length;
+        
+        
+        
+
 
         return(
             <React.Fragment>
@@ -118,7 +126,7 @@ class Projects extends Component {
                                                     <Card className={`project-box hundred`}>
                                                         <CardBody>
                                                             <CardTitle>100 Days of Code Challenge</CardTitle>
-                                                            On February 3, 2022, I began my #100DaysOfCode. I'm on <b>Day {logbookDays}</b>!
+                                                            On February 3, 2022, I began my #100DaysOfCode.
                                                             <Link to="/100daysofcode"><Button className="btn-outline-light ml-3">Check out my logbook.</Button></Link>
                                                         </CardBody>
                                                     </Card>
@@ -136,7 +144,7 @@ class Projects extends Component {
                                                     dabbled with d3.js to play with data visualizations, 
                                                     worked at a gender research startup to build an app to help with international development projects,
                                                     and am trying to save my houseplants from myself. <br/><br/>
-                                                    Recently, I have started a #100DaysOfCode challenge! I'm on <b>Day {logbookDays}</b>. See what I'm learning by taking a look at <Link to="/100daysofcode">my logbook.</Link><br/><br/>
+                                                    Recently, I have started a #100DaysOfCode challenge! See what I'm learning by taking a look at <Link to="/100daysofcode">my logbook.</Link><br/><br/>
                                                     Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
                                                 </p>
                                             </div>
