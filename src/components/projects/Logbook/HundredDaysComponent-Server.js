@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, Divider, Header, Grid, Form } from "semantic-ui-react";
-import { ENTRIES } from '../../../shared/logbookEntries';
+import { ENTRIES } from '../../../shared/logbookEntryFrame';
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "../../../App.css";
@@ -9,11 +9,35 @@ import "../../../HundredDays.css";
 
 export default function HundredDays() {
 
-  const[entries]=useState(ENTRIES);
+  const[entries, setEntries]=useState(ENTRIES);
   const[filteredEntries, setFilteredEntries] = useState(ENTRIES);
   const[selectedEntry, setSelectedEntry]=useState([filteredEntries[ENTRIES.length-1]]);
   const[resources, setResources]=useState(selectedEntry[0].resources);
   const[searchTerm, setSearchTerm] = useState("");
+
+  const [records, setRecords] = useState([]);
+
+  useEffect(() => {
+    async function getRecords() {
+      const response = await fetch(`http://localhost:3000/logbook/`);
+  
+      if (!response.ok) {
+        const message = `An error occurred: ${response.statusText}`;
+        window.alert(message);
+        return;
+      }
+  
+      const records = await response.json();
+      setRecords(records);
+      setEntries(records);
+      setFilteredEntries(records);
+    }
+  
+    getRecords();
+  
+    return;
+  }, [records.length]);
+
 
   // Sort so that most recent is first
   entries.sort((a, b) => (a.id < b.id) ? 1 : -1);

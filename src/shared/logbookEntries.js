@@ -147,7 +147,7 @@ export const ENTRIES = [
     day: "Day 13",
     title: "Day 4 on CodeSignal & Mongo",
     date: "Wednesday, February 23, 2022",
-    tools: "JavaScript",
+    tools: "JavaScript, MongoDB",
     url: "https://github.com/eamckinney/coding-challenges",
     learned: "Looking at another user's solution to a challenge I had already solved, I got to learn about '.some()' and remind myself about spread syntax. Additionally, I started setting up a MongoDB to eventually store these logbook entries (vs the simple javascript object that is storing them now)!",
     resources: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some",
@@ -165,5 +165,41 @@ export const ENTRIES = [
     url: "https://github.com/eamckinney/coding-challenges",
     learned: "Finished one of the code packs on CodeSignal today. They weren't my favorite challenges, so hoping the next pack gets more interesting!",
     resources: ["None"]
+  },
+  {
+    id: 14,
+    day: "Day 15",
+    title: "Connected Mongo!",
+    date: "Sunday, February 27, 2022",
+    tools: "JavaScript, React, Node, Express, MongoDB",
+    url: "https://github.com/eamckinney/portfolio-api",
+    learned: "Today I created a back-end Node.js and Express server, connected that to my local MongoDB (which contains a version of my logbook entries), and then connected it to  connected my front-end! Woo! I am writing this entry in MDB as we speak. Next up will be figuring out how to serve up the Mongo database on Firebase (where by site is hosted), and get everything connected there. I anticipate some challenges... but I have to figure it out before I can push these changes live!",
+    resources: ["https://www.mongodb.com/languages/mern-stack-tutorial",
+      "https://stackoverflow.com/questions/40714583/how-to-specify-a-port-to-run-a-create-react-app-based-project"]
+  },
+  {
+    id: 15,
+    day: "Day 16",
+    title: "CodeSignal: Binary",
+    date: "Monday, February 28, 2022",
+    tools: "JavaScript",
+    url: "https://github.com/eamckinney/coding-challenges",
+    learned: "Getting a bit more familiar with binary. I have always been a fairly 'practical' web developer, always with the end result in mind. Concepts like binary felt complicated, abstract, and impractical. Well, thank you CodeSignal for helping me face my fears and learn something new!",
+    resources: ["https://javascript.plainenglish.io/number-base-conversion-in-javascript-8bc44219b4ab",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice"]
+  },
+  {
+    id: 16,
+    day: "Day 17",
+    title: "Abort!",
+    date: "Wednesday, March 2, 2022",
+    tools: "Firebase, MongoDB",
+    url: "emilyamckinney.com/100daysofcode",
+    learned: "I'm not going to lie, server & hosting technology is really intimidating to me. After going down a few rabbit holes, I learned that I cannot host a MongoDB database on Firebase; instead I would have to host it through MongoDB Atlas (costing money) and then connect it to my server-side code via Cloud Functions and Cloud Run. Reading through the docs, I immediately felt overwhelmed and intimidated. This is an area of development I am NOT comfortable with. I could also use the Firebase database directly, which is something I might explore in the future. I have past experience using Mongo with DigitalOcean for hosting (where you could SSL into and set up MDB directly on the server for hosting), but again, that would cost $$ that I am not yet willing to put forth. For today, I will take the humble L and revert back to my simple .js logbook file so that I can push my changes live. Cheers to the long and winding road that is development.",
+    resources: [
+      "https://stackoverflow.com/questions/67460253/can-you-use-mongodb-with-firebase-hosting",
+      "https://firebase.google.com/docs/hosting/functions",
+      "https://firebase.google.com/products/realtime-database?gclid=CjwKCAiAyPyQBhB6EiwAFUuaksprR5_-YabaH_TYdZexyRyaol6QTq5eSlHjz42qHngHmJQwz5rW1RoCSsIQAvD_BwE&gclsrc=aw.ds"
+    ]
   },
 ];
