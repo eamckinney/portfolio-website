@@ -202,4 +202,19 @@ export const ENTRIES = [
       "https://firebase.google.com/products/realtime-database?gclid=CjwKCAiAyPyQBhB6EiwAFUuaksprR5_-YabaH_TYdZexyRyaol6QTq5eSlHjz42qHngHmJQwz5rW1RoCSsIQAvD_BwE&gclsrc=aw.ds"
     ]
   },
+  {
+    id: 17,
+    day: "Day 18",
+    title: "Ideating",
+    date: "Tuesday, March 8, 2022",
+    tools: "Documentation",
+    url: "emilyamckinney.com/100daysofcode",
+    learned: "After a bit of a break, I'm back! Thinking about the next thing I want to do. I'll probably continue working on CodeSignal, but I'd like to come up with a little app to work on as well. Some ideas include: 1. App that tells you how many people are on your WiFi (probably impossible without credentials). 2. App that plays with financial data (I know there are a lot of apps out there, but I feel like they all lack something for the nerdier among us). I read up on Plaid as a way to connect to financial accounts, and it looks super cool. The documentation is outstanding! It seems like a big thing to start, though, so I may set aside for today. 3. Perused Catch A Fire and applied for a few volunteer opportunities.",
+    resources: [
+      "https://plaid.com/docs/quickstart/sample-apps/#personal-financial-management",
+      "https://github.com/plaid/pattern",
+      "https://www.catchafire.org/",
+
+    ]
+  },
 ];
