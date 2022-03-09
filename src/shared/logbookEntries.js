@@ -217,4 +217,24 @@ export const ENTRIES = [
 
     ]
   },
+  {
+    id: 18,
+    day: "Day 19",
+    title: "CodeSignal: More Bits",
+    date: "Wednesday, March 9, 2022",
+    tools: "JavaScript",
+    url: "emilyamckinney.com/100daysofcode",
+    learned: "Did a few more bit challenges in CodeSignal today, which led me to read about for vs. while loops, the reduce() array method, binary operands (like ~), and stringing methods together to get comfortable flipping back and forth between arrays and strings (e.g. split('').reverse().join('')). Submitted another application to Catch-A-Fire and took another look at Plaid for my potential financial planning app.",
+    resources: [
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce",
+      "https://stackoverflow.com/questions/38334652/sum-all-the-digits-of-a-number-javascript",
+      "https://betterprogramming.pub/how-to-pick-between-a-while-and-for-loop-14ef217c3776#:~:text=A%20for%20loop%20is%20more,executed%20before%20the%20loop%20begins",
+      "https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/",
+      "https://stackoverflow.com/questions/19035893/finding-second-occurrence-of-a-substring-in-a-string-in-java",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators",
+      "https://github.com/plaid/pattern",
+      "https://www.catchafire.org/",
+
+    ]
+  },
 ];
