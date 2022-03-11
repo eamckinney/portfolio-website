@@ -36,12 +36,12 @@ class RenderProject extends Component {
             <React.Fragment>
                 <Card className={`project-box project${this.props.project.id}`} onClick={this.toggleModal}>
                     <CardBody>
-                        <CardTitle><i class={this.props.project.icon + " mr-2"} />{this.props.project.name}</CardTitle>
+                        <CardTitle>{this.props.project.name}</CardTitle>
                         <div className="mb-2">
                             {skills}
                         </div>
                         {this.props.project.description}
-                        <Button className="btn-outline-light" onClick={this.toggleModal}>See more.</Button>
+                        <Button className="btn-outline-light" onClick={this.toggleModal}><i class={this.props.project.icon + " mr-2"} />See more.</Button>
                     </CardBody>
                 </Card>
 
