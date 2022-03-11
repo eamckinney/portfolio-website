@@ -36,7 +36,7 @@ class RenderProject extends Component {
             <React.Fragment>
                 <Card className={`project-box project${this.props.project.id}`} onClick={this.toggleModal}>
                     <CardBody>
-                        <CardTitle>{this.props.project.name}</CardTitle>
+                        <CardTitle><i class={this.props.project.icon + " mr-2"} />{this.props.project.name}</CardTitle>
                         <div className="mb-2">
                             {skills}
                         </div>
@@ -46,7 +46,7 @@ class RenderProject extends Component {
                 </Card>
 
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} contentClassName={`project${this.props.project.id} wide-modal`}>
-                    <ModalHeader toggle={this.toggleModal} contentClassName="modal-title">{this.props.project.name}</ModalHeader>
+                    <ModalHeader toggle={this.toggleModal} contentClassName="modal-title"><i class={this.props.project.icon + " mr-3"} />{this.props.project.name}</ModalHeader>
                     <ModalBody>
                         {this.props.project.longDescription}
                         <img
