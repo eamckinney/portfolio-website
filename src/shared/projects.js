@@ -17,11 +17,11 @@ export const PROJECTS = [
         name: "Equilo",
         image: "/img/equilo_heatmap.png",
         color: "#E07A5F",
-        description: <p>At Equilo, I have collected data from global APIs, improved data visualization using Chart.js, built a heatmap using Google Geocharts, and built new API routes to improve data loading efficiency using Express and Node.js. <br /><br /></p>,
-        longDescription: <p>I have been working for Equilo, a gender research and international development startup, for nearly 3 years, but have shifted into a Python and web developer role about a year ago. I have collected data from global APIs, calculated Gender Equality indices, improved data visualization using Chart.js, built a heatmap using Google Geocharts, and built new API routes to improve data loading efficiency using Express and Node.js.<br/><br/></p>,
+        description: <p>At Equilo, I have collected data from global APIs, improved data visualization using Chart.js, built a heatmap using Google Geocharts, designed and created a new data product within our Vue.js framework, and built new API routes to improve data loading efficiency using Express and Node.js. <br /></p>,
+        longDescription: <p>I worked for Equilo, a gender research and international development startup, for 3 years. I have collected data from global APIs, calculated Gender Equality indices, improved data visualization using Chart.js, built a heatmap using Google Geocharts, designed and created the pages to present and detail the Gender-Based Violence Risk Score (a new product) within our Vue.js framework, and built new API routes to improve data loading efficiency using Express and Node.js.<br/><br/></p>,
         skills: ["HTML","Vue.js","Node.js","MongoDB"],
         buttonText: "Back to projects",
-        url: ""
+        url: "app.equilo.io"
     },
     {
         id: 2,

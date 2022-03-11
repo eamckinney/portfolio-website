@@ -248,6 +248,7 @@ export const ENTRIES = [
     resources: [
       "https://www.catchafire.org/",
       "https://free.cooltimeline.com/",
+      "https://mybrotherstable.org/",
     ]
   },
   {
