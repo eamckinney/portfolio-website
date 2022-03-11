@@ -258,11 +258,12 @@ export const ENTRIES = [
     date: "Friday, March 11, 2022",
     tools: "Wordpress, Cool Timeline Plugin",
     url: "https://mybrotherstable.org/",
-    learned: "I dove into My Brother's Table's Wordpress site to understand how it has been implemented, what plugins it has used, etc. I began to frame out the timeline for the Anniversary page, and also investigate the other components of the site, how they worked together, and the possibility of creating a staging site to work from. Wordpress is not the most intuitive site-builder I have used. But I feel like I have found where most things live and feel like I can make some small edits that will improve the overall look and feel of the site.",
+    learned: "I dove into My Brother's Table's Wordpress site to understand how it has been implemented, what plugins it has used, etc. I began to frame out the timeline for the Anniversary page, and also investigate the other components of the site, how they worked together, and the possibility of creating a staging site to work from. Wordpress is not the most intuitive site-builder I have used. But I feel like I have found where most things live and feel like I can make some small edits that will improve the overall look and feel of the site. I also made a few edits to the 'Projects' section of my portfolio site, showcasing the work I did for Jennifer Bertram, adding in some fontawesome icons, and figuring out how to link to external sites with the React Router.",
     resources: [
       "https://www.catchafire.org/",
       "https://free.cooltimeline.com/",
-      "https://www.wpbeginner.com/wp-tutorials/how-to-create-staging-environment-for-a-wordpress-site/"
+      "https://www.wpbeginner.com/wp-tutorials/how-to-create-staging-environment-for-a-wordpress-site/",
+      "https://stackoverflow.com/questions/42914666/react-router-external-link"
     ]
   },
 ];
