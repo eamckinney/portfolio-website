@@ -29,6 +29,10 @@ class Main extends Component {
                         window.location.href = 'https://app.equilo.io/#/';
                         return null;
                         }} />
+                    <Route path='/jennifer-bertram' component={() => {
+                        window.location.href = 'https://www.jenniferbertram.com/';
+                        return null;
+                        }} />
                     <Redirect to='/home' />
                 </Switch>
             </div>
