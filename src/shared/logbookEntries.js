@@ -241,13 +241,27 @@ export const ENTRIES = [
     id: 19,
     day: "Day 20",
     title: "Catch A Fire: My Brother's Table",
-    date: "Wednesday, March 9, 2022",
+    date: "Thursday, March 10, 2022",
     tools: "Wordpress, Cool Timeline Plugin",
     url: "https://mybrotherstable.org/",
     learned: "Today I met with a woman at My Brother's Table to discuss a project I had applied to volunteer for. It is their 40th anniversary this year, and they are looking to create a new page on their website in celebration. During the discussion, I found out that they have a Wordpress site, and although the task will be more related to web design and using Wordpress tools vs. straight up coding, I took the project. After spending some time perusing projects on Catch A Fire, I'm learning that many nonprofits need help managing, updating, and auditing sites that have been built on platforms like SquareSpace and Wordpress. While those types of skills aren't necessarily the ones that are at the top of my list to hone, I am interested in helping where I can. In this situation, I believe my web design skills can make an impact in this project, and I am happy to use some of my time to help them out.",
     resources: [
       "https://www.catchafire.org/",
       "https://free.cooltimeline.com/",
+    ]
+  },
+  {
+    id: 20,
+    day: "Day 21",
+    title: "Catch A Fire: My Brother's Table",
+    date: "Friday, March 11, 2022",
+    tools: "Wordpress, Cool Timeline Plugin",
+    url: "https://mybrotherstable.org/",
+    learned: "I dove into My Brother's Table's Wordpress site to understand how it has been implemented, what plugins it has used, etc. I began to frame out the timeline for the Anniversary page, and also investigate the other components of the site, how they worked together, and the possibility of creating a staging site to work from. Wordpress is not the most intuitive site-builder I have used. But I feel like I have found where most things live and feel like I can make some small edits that will improve the overall look and feel of the site.",
+    resources: [
+      "https://www.catchafire.org/",
+      "https://free.cooltimeline.com/",
+      "https://www.wpbeginner.com/wp-tutorials/how-to-create-staging-environment-for-a-wordpress-site/"
     ]
   },
 ];
