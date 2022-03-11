@@ -25,6 +25,10 @@ class Main extends Component {
                     } />
                     <Route path='/betaforbeta' component={RouteFilter} />
                     <Route path='/100daysofcode' component={HundredDays} />
+                    <Route path='/equilo' component={() => {
+                        window.location.href = 'https://app.equilo.io/#/';
+                        return null;
+                        }} />
                     <Redirect to='/home' />
                 </Switch>
             </div>

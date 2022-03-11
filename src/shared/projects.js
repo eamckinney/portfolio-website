@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const PROJECTS = [
     {
@@ -18,10 +19,10 @@ export const PROJECTS = [
         image: "/img/equilo_heatmap.png",
         color: "#E07A5F",
         description: <p>At Equilo, I have collected data from global APIs, improved data visualization using Chart.js, built a heatmap using Google Geocharts, designed and created a new data product within our Vue.js framework, and built new API routes to improve data loading efficiency using Express and Node.js. <br /></p>,
-        longDescription: <p>I worked for Equilo, a gender research and international development startup, for 3 years. I have collected data from global APIs, calculated Gender Equality indices, improved data visualization using Chart.js, built a heatmap using Google Geocharts, designed and created the pages to present and detail the Gender-Based Violence Risk Score (a new product) within our Vue.js framework, and built new API routes to improve data loading efficiency using Express and Node.js.<br/><br/></p>,
+        longDescription: <p>I worked for Equilo, a gender research and international development startup, for 3 years. I have collected data from global APIs, calculated Gender Equality indices, improved data visualization using Chart.js, built a heatmap using Google Geocharts, designed and created the pages to present and detail the Gender-Based Violence Risk Score (a new product) within our Vue.js framework, and built new API routes to improve data loading efficiency using Express and Node.js. Check out the Equilo App at <Link to="/equilo">app.equilo.io</Link> (you will need to create a free account to explore the app).<br/><br/></p>,
         skills: ["HTML","Vue.js","Node.js","MongoDB"],
-        buttonText: "Back to projects",
-        url: "app.equilo.io"
+        buttonText: "Go to the Equilo App",
+        url: "/equilo"
     },
     {
         id: 2,
