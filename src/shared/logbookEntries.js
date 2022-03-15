@@ -258,12 +258,39 @@ export const ENTRIES = [
     date: "Friday, March 11, 2022",
     tools: "Wordpress, Cool Timeline Plugin",
     url: "https://mybrotherstable.org/",
-    learned: "I dove into My Brother's Table's Wordpress site to understand how it has been implemented, what plugins it has used, etc. I began to frame out the timeline for the Anniversary page, and also investigate the other components of the site, how they worked together, and the possibility of creating a staging site to work from. Wordpress is not the most intuitive site-builder I have used. But I feel like I have found where most things live and feel like I can make some small edits that will improve the overall look and feel of the site. I also made a few edits to the 'Projects' section of my portfolio site, showcasing the work I did for Jennifer Bertram, adding in some fontawesome icons, and figuring out how to link to external sites with the React Router.",
+    learned: "I dove into My Brother's Table's Wordpress site to understand how it has been implemented, what plugins it has used, etc. I began to frame out the timeline for the Anniversary page, and also investigate the other components of the site, how they worked together, and the possibility of creating a staging site to work from. Wordpress is not the most intuitive site-builder I have used. But I feel like I have found where most things live and feel like I can make some small edits that will improve the overall look and feel of the site.",
     resources: [
       "https://www.catchafire.org/",
       "https://free.cooltimeline.com/",
       "https://www.wpbeginner.com/wp-tutorials/how-to-create-staging-environment-for-a-wordpress-site/",
       "https://stackoverflow.com/questions/42914666/react-router-external-link"
+    ]
+  },
+  {
+    id: 21,
+    day: "Day 22",
+    title: "Portfolio Projects Update",
+    date: "Monday, March 14, 2022",
+    tools: "React, JavaScript, Wix",
+    url: "https://emilyamckinney.com",
+    learned: "Today I made a few edits to the 'Projects' section of my portfolio site, showcasing the work I did for Jennifer Bertram, adding in some fontawesome icons, and figuring out how to link to external sites with the React Router.",
+    resources: [
+      "https://stackoverflow.com/questions/42914666/react-router-external-link",
+      "https://www.jenniferbertram.com/"
+    ]
+  },
+  {
+    id: 22,
+    day: "Day 23",
+    title: "Catch A Fire: My Brother's Table",
+    date: "Tuesday, March 15, 2022",
+    tools: "Wordpress, Cool Timeline Plugin",
+    url: "https://mybrotherstable.org/",
+    learned: "I continued my work on the 40th Anniversary page for My Brother's Table. I have a solid layout set up to show my contact tomorrow during a check-in meeting that includes their special anniversary logo, the timeline, and a spot for video interviews.",
+    resources: [
+      "https://www.catchafire.org/",
+      "https://free.cooltimeline.com/",
+      "https://wordpress.com/forums/topic/how-to-place-video-side-by-side/"
     ]
   },
 ];
