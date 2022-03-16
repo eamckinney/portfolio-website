@@ -293,4 +293,19 @@ export const ENTRIES = [
       "https://wordpress.com/forums/topic/how-to-place-video-side-by-side/"
     ]
   },
+  {
+    id: 23,
+    day: "Day 24",
+    title: "CRUD App & Linking Two Repos",
+    date: "Wednesday, March 16, 2022",
+    tools: "React Hooks, JavaScript",
+    url: "https://github.com/eamckinney/to-do-app",
+    learned: "I started building a CRUD app today in order to continue to improve my understanding of React Hooks, learn how to work with local storage, and figure out how to deploy and host multiple (GitHub) repositories on a single domain name and website (emilyamckinney.com). I have some ideas about potentially linking it to my Google calendar or somehow creating notifications, but let's start small!",
+    resources: [
+      "https://www.freecodecamp.org/news/coding-projects-to-include-in-your-frontend-portfolio/",
+      "https://www.taniarascia.com/crud-app-in-react-with-hooks/",
+      "https://answers.netlify.com/t/support-guide-can-i-deploy-multiple-repositories-in-a-single-site/179",
+      "https://firebase.google.com/docs/hosting/multisites"
+    ]
+  },
 ];
