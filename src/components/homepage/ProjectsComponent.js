@@ -164,6 +164,23 @@ class Projects extends Component {
                                 </div>
                                 
                             </div>
+                            <div className="row">
+                                <div className="col" style={{margin: '5em 10em 10em 10em'}}>
+                                    <h1 className="text-center" data-aos="fade-up" data-aos-duration="1000">Testimonials</h1>
+                                    <div className="text-center mx-auto" style={{fontSize: "14px", marginTop: '4em'}} data-aos="fade-up" data-aos-duration="1000">
+                                        <p>
+                                            <em>"Exceeding all expectations, Emily redesigned our home page and created a new 40th Anniversary page for our website. She contributed great ideas on how to improve the functionality of our website to make it easier to navigate as well as more visually appealing.  Her additions/improvements to the site created a new and compelling way for us to share our organization’s history and mission. Through the process of multiple plugin and theme upgrades, Emily coordinated with the appropriate team members to ensure smooth and safe upgrades, all while meeting deadlines. With her strong communication skills, she asked all the right questions and explained things in a way that someone who is not tech-savvy could easily understand. Emily is a most skilled and creative web developer and I can’t say enough about how much I enjoyed working with her on this project."</em>
+                                        </p>
+                                        <p><b> - Annie Pulaski, My Brother's Table</b></p>
+                                    </div>
+                                    <div className="text-center mx-auto" style={{fontSize: "14px", marginTop: '4em'}} data-aos="fade-up" data-aos-duration="1000">
+                                        <p>
+                                            <em>"Emily thoughtfully and masterfully translated my business and my personality into a website with a beautiful color palate, a functionality that's easy to navigate and update, and a design that will carry me forward in my growing business. With just a few questions to answer and copy to write, I was able to convey my needs and she delivered a website that will serve my needs for years to come."</em>
+                                        </p>
+                                        <p><b> - Jennifer Bertram, MSW, LISW</b></p>
+                                    </div>
+                                </div>
+                            </div>
                             
                             <div className="row">
                                 <div className="col first-block-scroll">
