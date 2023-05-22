@@ -4,21 +4,9 @@ import { Link } from "react-router-dom";
 export const PROJECTS = [
     {
         id: 0,
-        name: "BetaForBeta",
-        image: "/img/betaforbeta.png",
-        color: "#3D405B",
-        icon: "fa fa-md fa-filter",
-        description: <p>I built a simple web app that allows users to filter climbing routes by the route's style using key words sourced from the route's description.<br /><br /></p>,
-        longDescription: <p>I built a simple web app that allows users to filter climbing routes by the route's style using key words sourced from the route's description. Most climbing guides allow users to filter by location, type, grade, and star-rating, but few if any allow people to filter by route style. My next goal is to create a machine learning algorithm to recommend routes that a user may like based on ratings and reviews of previous routes.<br/><br/></p>,
-        skills: ["JavaScript","React","Python"],
-        buttonText: "Check it out.",
-        url: "/betaforbeta"
-    },
-    {
-        id: 1,
         name: "Equilo",
         image: "/img/equilo_heatmap.png",
-        color: "#E07A5F",
+        color: "#3D405B",
         icon: "fa fa-md fa-transgender",
         description: <p>At Equilo, I have collected data from global APIs, improved data visualization using Chart.js, built a heatmap using Google Geocharts, designed and created a new data product within our Vue.js framework, and built new API routes to improve data loading efficiency using Express and Node.js. <br /></p>,
         longDescription: <p>I worked for Equilo, a gender research and international development startup, for 3 years. I have collected data from global APIs, calculated Gender Equality indices, improved data visualization using Chart.js, built a heatmap using Google Geocharts, designed and created the pages to present and detail the Gender-Based Violence Risk Score (a new product) within our Vue.js framework, and built new API routes to improve data loading efficiency using Express and Node.js. Check out the Equilo App at <Link to="/equilo">app.equilo.io</Link> (you will need to create a free account to explore the app).<br/><br/></p>,
@@ -26,6 +14,19 @@ export const PROJECTS = [
         buttonText: "Go to the Equilo app.",
         url: "/equilo"
     },
+    {
+        id: 1,
+        name: "BetaForBeta",
+        image: "/img/betaforbeta.png",
+        color: "#E07A5F",
+        icon: "fa fa-md fa-filter",
+        description: <p>I built a simple web app that allows users to filter climbing routes by the route's style using key words sourced from the route's description.<br /><br /></p>,
+        longDescription: <p>I built a simple web app that allows users to filter climbing routes by the route's style using key words sourced from the route's description. Most climbing guides allow users to filter by location, type, grade, and star-rating, but few if any allow people to filter by route style. My next goal is to create a machine learning algorithm to recommend routes that a user may like based on ratings and reviews of previous routes.<br/><br/></p>,
+        skills: ["JavaScript","React","Python"],
+        buttonText: "Check it out.",
+        url: "/betaforbeta"
+    },
+    
     {
         id: 2,
         name: "Small Biz Website",

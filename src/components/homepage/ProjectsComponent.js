@@ -117,7 +117,7 @@ class Projects extends Component {
                         <div class="col second-block px-5">
                             <div class="row" id="Projects">
                                 <div class="col">
-                                    <div className="row">
+                                    {/*<div className="row">
                                         <div class="col-md-5 mx-4 order-md-last">
                                         </div>
                                         <div class="col-md-6"> 
@@ -133,18 +133,18 @@ class Projects extends Component {
                                                 </Link>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>*/}
                                     <div class="row">
                                         <div class="col-md-5 mx-4 order-md-last">
                                             <div class="mt-5 align-items-center">
                                                 <h1 class="text-left" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
                                                 <p class="text-left" data-aos="fade-up" data-aos-duration="1000">
                                                     Here are a couple of projects I've worked on. 
-                                                    I fed my obsession with climbing by pulling data from Mountain Project and adding some fun features to better search for routes,
-                                                    dabbled with d3.js to play with data visualizations, 
-                                                    worked at a gender research startup to build an app to help with international development projects,
+                                                    I worked at a gender research startup to build an app to help achieve better outcomes for women internationally,
+                                                    I have played around with climbing data from Mountain Project by adding some fun features to better search for routes,
+                                                    I have helped several small businesses and nonprofit organizations communicate their missions impactfully on the web, 
                                                     and am trying to save my houseplants from myself. <br/><br/>
-                                                    Recently, I have started a #100DaysOfCode challenge! See what I'm learning by taking a look at <Link to="/100daysofcode">my logbook.</Link><br/><br/>
+                                                    {/*Recently, I have started a #100DaysOfCode challenge! See what I'm learning by taking a look at <Link to="/100daysofcode">my logbook.</Link><br/><br/>*/}
                                                     Want to know more or chat about a new project? <a href="#Connect">Let's connect.</a>
                                                 </p>
                                             </div>
