@@ -31,26 +31,27 @@ class About extends Component {
                                 </div>
                                 <div className="col-sm-6">
                                     <p className="text-left" data-aos="fade-up" data-aos-duration="1000">
-                                        At the center of who I am, <b>I really like to solve puzzles and learn new things.</b> 
+                                        I am passionate about <b>solving puzzles and tackling new challenges.</b> 
                                         <br/><br/>
-                                        Right now, that is taking 
-                                        shape by writing code as a freelance Python and web develope<span id="roo-about" className='secret' onClick={this.toggleRoo}>roo</span>,
-                                        helping companies understand how people make decisions as a freelance quantitative brand strategist, and 
-                                        fiddling around with JavaScript, React, APIs, and data visualization "for fun." When I am faced with a challenge, 
-                                        I think through the best ways to solve it, and I figure out how to make it happen.
-                                        <br/><br/>
-                                        I will leave it at that. <a href="#Connect">Drop me a line.</a> I hope to hear from you.
+                                        Right now, that is taking shape by: <br/>
+                                        <ul>
+                                            <li>Writing code as a web and app develope<span id="roo-about" className='secret' onClick={this.toggleRoo}>roo</span>, focusing on impactful & memorable design, seamless & interactive user experience, and clarity</li>
+                                            <li>Helping companies understand how people make decisions (and how brands can leverage that information) as a quantitative brand strategist</li>
+                                            <li>Fiddling around with JavaScript, React, React Native, APIs, and data visualization for fun. </li>
+                                        </ul>                                        
+                                        <a href="#Connect">Drop me a line.</a> I hope to hear from you.
                                         <br/><br/>
                                         <div className="mb-2">
                                             <b>Some of my skills include:</b>
                                         </div>
                                         <div>
-                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Python</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>JavaScript</div>
-                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>React.js</div>
-                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Vue.js</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>React</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>React Native</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Vue</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>HTML</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>CSS</div>
+                                            <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>Python</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>R</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#7F8FA3", color: "#fff9f5"}}>SPSS</div>
                                             <div className="ui label tiny mb-2" style={{backgroundColor: "#81B29A", color: "#fff9f5"}}>Web Development</div>
