@@ -33,7 +33,7 @@ class Connect extends Component {
                         </p>
                         
                         <p className="text-center" style={{fontSize: '.8em'}}>
-                            &copy; 2021 Emily McKinney. All rights reserved. This site was built by hand.
+                            &copy; 2023 Emily McKinney. All rights reserved. This site was built by hand.
                         </p>
                     </div>
                 </div>
